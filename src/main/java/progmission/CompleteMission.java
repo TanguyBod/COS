@@ -458,56 +458,60 @@ public class CompleteMission extends SimpleMission {
 		 * 
 		 * Please complete the code below.
 		 */
-		final Site targetSite = this.getSiteList().get(0);
-		logger.info(" Site : " + targetSite.getName());
 
-		/*
-		 * You can check if the Site access has already been computed and serialized or
-		 * not. If so, you can simply load the .ser file to load the timeline, else you
-		 * need to compute it. This will prevent you from computing the whole access
-		 * timelines each time you want to compute an observation plan and save time
-		 * later in the BE.
-		 */
+		int length = this.getSiteList().size();
 
-		// Checking if the Site access Timeline has already been serialized or not
-		final String filename = generateSerializationName(targetSite, hashConstantBE);
-		File file = new File(filename);
-		boolean loaded = false;
+		for (int i = 0; i<length; i++) {
+			final Site targetSite = this.getSiteList().get(i);
+			logger.info(" Site : " + targetSite.getName());
 
-		// If the file exist for the current Site, we try to load its content
-		if (file.exists()) {
-			try {
-				// Load the timeline from the file and add it to the accessPlan
-				final Timeline siteAccessTimeline = loadSiteAccessTimeline(filename);
+			/*
+			* You can check if the Site access has already been computed and serialized or
+			* not. If so, you can simply load the .ser file to load the timeline, else you
+			* need to compute it. This will prevent you from computing the whole access
+			* timelines each time you want to compute an observation plan and save time
+			* later in the BE.
+			*/
+
+			// Checking if the Site access Timeline has already been serialized or not
+			final String filename = generateSerializationName(targetSite, hashConstantBE);
+			File file = new File(filename);
+			boolean loaded = false;
+
+			// If the file exist for the current Site, we try to load its content
+			if (file.exists()) {
+				try {
+					// Load the timeline from the file and add it to the accessPlan
+					final Timeline siteAccessTimeline = loadSiteAccessTimeline(filename);
+					this.accessPlan.put(targetSite, siteAccessTimeline);
+					ProjectUtils.printTimeline(siteAccessTimeline);
+					loaded = true; // the Site has been loaded, no need to compute the access again
+					logger.info(filename + "has been loaded successfully!");
+				} catch (ClassNotFoundException | IOException e) {
+					logger.warn(filename + " could not be loaded !");
+					logger.warn(e.getMessage());
+				}
+			}
+
+			// If it was not serialized or if loading has failed, we need to compute and
+			// serialize the site access Timeline
+			if (!loaded) {
+				logger.info(targetSite.getName() + " has not been serialized, launching access computation...");
+				// Computing the site access Timeline
+				final Timeline siteAccessTimeline = createSiteAccessTimeline(targetSite);
 				this.accessPlan.put(targetSite, siteAccessTimeline);
 				ProjectUtils.printTimeline(siteAccessTimeline);
-				loaded = true; // the Site has been loaded, no need to compute the access again
-				logger.info(filename + "has been loaded successfully!");
-			} catch (ClassNotFoundException | IOException e) {
-				logger.warn(filename + " could not be loaded !");
-				logger.warn(e.getMessage());
+
+				try {
+					// Serialize the timeline for later reading
+					serializeSiteAccessTimeline(filename, siteAccessTimeline);
+					logger.info(filename + " has been serialized successfully !");
+				} catch (IOException e) {
+					logger.warn(filename + " could not be serialized !");
+					logger.warn(e.getMessage());
+				}
 			}
 		}
-
-		// If it was not serialized or if loading has failed, we need to compute and
-		// serialize the site access Timeline
-		if (!loaded) {
-			logger.info(targetSite.getName() + " has not been serialized, launching access computation...");
-			// Computing the site access Timeline
-			final Timeline siteAccessTimeline = createSiteAccessTimeline(targetSite);
-			this.accessPlan.put(targetSite, siteAccessTimeline);
-			ProjectUtils.printTimeline(siteAccessTimeline);
-
-			try {
-				// Serialize the timeline for later reading
-				serializeSiteAccessTimeline(filename, siteAccessTimeline);
-				logger.info(filename + " has been serialized successfully !");
-			} catch (IOException e) {
-				logger.warn(filename + " could not be serialized !");
-				logger.warn(e.getMessage());
-			}
-		}
-
 		return this.accessPlan;
 	}
 
@@ -544,10 +548,10 @@ public class CompleteMission extends SimpleMission {
 		 * ConstantsBE.INTEGRATION_TIME for the duration of one observation). Finally,
 		 * we must respect the cinematic constraint : using the
 		 * Satellite#computeSlewDuration() method, we need to ensure that the
-		 * theoritical duration of the slew between two consecutive observations is
+		 * theoretical duration of the slew between two consecutive observations is
 		 * always smaller than the actual duration between those consecutive
 		 * observations. Same goes for the slew between a Nadir pointing law and another
-		 * poiting law. Of course, we cannot point two targets at once, so we cannot
+		 * pointing law. Of course, we cannot point two targets at once, so we cannot
 		 * perform two observations during the same AbsoluteDateInterval !
 		 * 
 		 * Tip 1 : Here you can use the greedy algorithm presented in class, or any
