@@ -1,0 +1,19 @@
+[15:44:51] INFO BEProgMissionLogger | ##################################################
+[15:44:54] INFO BEProgMissionLogger | Complete simulation starting ...
+[15:44:54] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[15:44:54] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[15:44:54] INFO BEProgMissionLogger |  Site : LYON
+[15:44:54] INFO BEProgMissionLogger | LYON has not been serialized, launching access computation...
+[15:45:00] INFO BEProgMissionLogger | 
+LYON
+[15:45:00] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[15:45:00] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[15:45:00] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[15:45:00] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[15:45:00] INFO BEProgMissionLogger | 	|___________________________
+[15:45:00] INFO BEProgMissionLogger | accesses/LYON_562931739.ser has been serialized successfully !
+[15:45:00] INFO BEProgMissionLogger | Access plan : {LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@68746f22}
+[15:45:00] INFO BEProgMissionLogger | 
+
+Simulation done
+[15:45:00] INFO BEProgMissionLogger | ##################################################

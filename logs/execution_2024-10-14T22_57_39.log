@@ -1,0 +1,88 @@
+[22:57:39] INFO BEProgMissionLogger | ##################################################
+[22:57:41] INFO BEProgMissionLogger | Complete simulation starting ...
+[22:57:41] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[22:57:41] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[22:57:41] INFO BEProgMissionLogger |  Site : PARIS
+[22:57:41] INFO BEProgMissionLogger | PARIS has not been serialized, launching access computation...
+[22:57:46] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:08:32.587 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-01T18:16:27.992 (UTC) ; 2010-09-01T18:19:27.971 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-02T07:47:27.740 (UTC) ; 2010-09-02T07:48:25.472 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-03T06:50:06.058 (UTC) ; 2010-09-03T06:51:37.538 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-03T17:57:17.972 (UTC) ; 2010-09-03T17:59:13.791 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-05T17:39:48.095 (UTC) ; 2010-09-05T17:40:48.087 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-06T07:09:11.831 (UTC) ; 2010-09-06T07:11:10.970 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-06T18:17:42.460 (UTC) ; 2010-09-06T18:20:58.199 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility phenomenon [ 2010-09-07T17:19:45.740 (UTC) ; 2010-09-07T17:19:45.794 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	|___________________________
+[22:57:46] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-01T06:44:06.914 (UTC) ; 2010-09-01T16:56:31.075 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-02T06:45:27.630 (UTC) ; 2010-09-02T16:54:31.896 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-03T06:46:48.907 (UTC) ; 2010-09-03T16:52:31.645 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-04T06:48:10.756 (UTC) ; 2010-09-04T16:50:30.345 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-05T06:49:33.185 (UTC) ; 2010-09-05T16:48:28.021 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-06T06:50:56.203 (UTC) ; 2010-09-06T16:46:24.695 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Illumination phenomenon [ 2010-09-07T06:52:19.817 (UTC) ; 2010-09-07T16:44:20.387 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	|___________________________
+[22:57:46] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-08-31T23:59:26.000 (UTC) ; 2010-09-01T02:53:50.200 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T03:18:32.959 (UTC) ; 2010-09-01T04:23:33.610 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T05:07:45.416 (UTC) ; 2010-09-01T05:53:24.792 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T06:58:09.077 (UTC) ; 2010-09-01T07:21:35.076 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T16:49:16.830 (UTC) ; 2010-09-01T17:20:57.237 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T18:18:13.972 (UTC) ; 2010-09-01T19:10:46.256 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T19:47:57.660 (UTC) ; 2010-09-01T21:01:12.903 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-01T21:16:18.964 (UTC) ; 2010-09-02T02:05:19.697 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T02:07:55.440 (UTC) ; 2010-09-02T03:30:10.557 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T04:01:49.496 (UTC) ; 2010-09-02T04:59:44.371 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T05:51:33.884 (UTC) ; 2010-09-02T06:28:55.834 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T07:47:15.438 (UTC) ; 2010-09-02T07:51:47.772 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T15:59:02.330 (UTC) ; 2010-09-02T16:12:09.949 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T17:24:39.877 (UTC) ; 2010-09-02T18:05:11.716 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T18:53:50.151 (UTC) ; 2010-09-02T19:55:17.076 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-02T20:22:55.948 (UTC) ; 2010-09-03T02:38:32.747 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T02:54:12.859 (UTC) ; 2010-09-03T04:06:20.484 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T04:45:21.783 (UTC) ; 2010-09-03T05:35:35.920 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T06:36:12.257 (UTC) ; 2010-09-03T07:03:35.643 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T16:32:27.168 (UTC) ; 2010-09-03T16:58:15.988 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T18:00:05.982 (UTC) ; 2010-09-03T18:49:32.600 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T19:29:06.322 (UTC) ; 2010-09-03T20:41:22.846 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-03T20:56:15.087 (UTC) ; 2010-09-04T03:13:58.471 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T03:38:19.652 (UTC) ; 2010-09-04T04:42:17.519 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T05:29:17.839 (UTC) ; 2010-09-04T06:11:00.324 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T07:23:22.961 (UTC) ; 2010-09-04T07:35:41.284 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T17:07:10.536 (UTC) ; 2010-09-04T17:43:08.091 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T18:35:23.772 (UTC) ; 2010-09-04T19:34:25.337 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-04T20:03:42.173 (UTC) ; 2010-09-05T03:49:36.459 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T04:22:18.500 (UTC) ; 2010-09-05T05:17:57.376 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T06:13:56.433 (UTC) ; 2010-09-05T06:45:38.799 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T16:16:48.544 (UTC) ; 2010-09-05T16:34:11.989 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T17:42:10.101 (UTC) ; 2010-09-05T18:27:54.153 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T19:10:20.917 (UTC) ; 2010-09-05T20:21:07.509 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-05T20:36:22.348 (UTC) ; 2010-09-06T02:59:50.109 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T03:12:34.207 (UTC) ; 2010-09-06T04:25:10.934 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T05:06:29.929 (UTC) ; 2010-09-06T05:53:12.312 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T07:00:24.778 (UTC) ; 2010-09-06T07:18:24.013 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T16:50:10.978 (UTC) ; 2010-09-06T17:20:21.322 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T18:17:05.834 (UTC) ; 2010-09-06T19:13:09.580 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-06T19:44:34.576 (UTC) ; 2010-09-07T03:33:48.860 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-07T03:58:05.519 (UTC) ; 2010-09-07T05:00:33.290 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-07T05:51:14.254 (UTC) ; 2010-09-07T06:27:46.044 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-07T17:24:31.083 (UTC) ; 2010-09-07T18:05:43.294 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-07T18:51:41.876 (UTC) ; 2010-09-07T20:00:21.386 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Dazzling phenomenon [ 2010-09-07T20:16:42.332 (UTC) ; 2010-09-07T23:59:26.000 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	|___________________________
+[22:57:46] INFO BEProgMissionLogger | 
+PARIS
+[22:57:46] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:08:32.587 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:27.740 (UTC) ; 2010-09-02T07:48:25.472 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.058 (UTC) ; 2010-09-03T06:51:37.538 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.831 (UTC) ; 2010-09-06T07:11:10.970 (UTC) ]
+[22:57:46] INFO BEProgMissionLogger | 	|___________________________
+[22:57:46] INFO BEProgMissionLogger | accesses/PARIS_992542205.ser has been serialized successfully !
+[22:57:46] INFO BEProgMissionLogger | Access plan : {PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@7ac296f6}
+[22:57:46] INFO BEProgMissionLogger | 
+
+Simulation done
+[22:57:46] INFO BEProgMissionLogger | ##################################################

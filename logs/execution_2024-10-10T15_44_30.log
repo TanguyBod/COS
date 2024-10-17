@@ -1,0 +1,17 @@
+[15:44:30] INFO BEProgMissionLogger | ##################################################
+[15:44:32] INFO BEProgMissionLogger | Complete simulation starting ...
+[15:44:32] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[15:44:32] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[15:44:32] INFO BEProgMissionLogger |  Site : TOULOUSE
+[15:44:32] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[15:44:32] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.871 (UTC) ; 2010-09-01T07:13:03.558 (UTC) ]
+[15:44:32] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:26.596 (UTC) ; 2010-09-03T06:53:16.707 (UTC) ]
+[15:44:32] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:43.211 (UTC) ; 2010-09-04T07:33:32.179 (UTC) ]
+[15:44:32] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:36.155 (UTC) ; 2010-09-06T07:14:29.131 (UTC) ]
+[15:44:32] INFO BEProgMissionLogger | 	|___________________________
+[15:44:32] INFO BEProgMissionLogger | accesses/TOULOUSE_562931739.serhas been loaded successfully!
+[15:44:32] INFO BEProgMissionLogger | Access plan : {TOULOUSE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@26abb146}
+[15:44:32] INFO BEProgMissionLogger | 
+
+Simulation done
+[15:44:32] INFO BEProgMissionLogger | ##################################################
