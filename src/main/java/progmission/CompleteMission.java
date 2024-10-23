@@ -16,6 +16,7 @@ import fr.cnes.sirius.patrius.attitudes.AttitudeLeg;
 import fr.cnes.sirius.patrius.attitudes.AttitudeProvider;
 import fr.cnes.sirius.patrius.attitudes.ConstantSpinSlew;
 import fr.cnes.sirius.patrius.attitudes.StrictAttitudeLegsSequence;
+import fr.cnes.sirius.patrius.attitudes.TargetGroundPointing;
 import fr.cnes.sirius.patrius.events.CodedEvent;
 import fr.cnes.sirius.patrius.events.CodedEventsLogger;
 import fr.cnes.sirius.patrius.events.GenericCodingEventDetector;
@@ -442,36 +443,13 @@ public class CompleteMission extends SimpleMission {
 	 *                          computations
 	 */
 	public Map<Site, Timeline> computeAccessPlan() throws PatriusException {
-		/**
-		 * Here you need to compute one access Timeline per target Site. You can start
-		 * with only one site and then try to compute all of them.
-		 * 
-		 * Note : when computing all the sites, try to make sure you don't decrease the
-		 * performance of the code too much. You might have some modifications to do in
-		 * order to ensure a reasonable time of execution.
-		 */
-		logger.info("============= Computing Access Plan =============");
-		/*
-		 * We give a very basic example of incomplete code computing the first target
-		 * site access Timeline and adding it to the accessPlan. The main goal is then
-		 * to loop on all Sites.
-		 * 
-		 * Please complete the code below.
-		 */
 
+		logger.info("============= Computing Access Plan =============");
 		int length = this.getSiteList().size();
 
 		for (int i = 0; i<length; i++) {
 			final Site targetSite = this.getSiteList().get(i);
 			logger.info(" Site : " + targetSite.getName());
-
-			/*
-			* You can check if the Site access has already been computed and serialized or
-			* not. If so, you can simply load the .ser file to load the timeline, else you
-			* need to compute it. This will prevent you from computing the whole access
-			* timelines each time you want to compute an observation plan and save time
-			* later in the BE.
-			*/
 
 			// Checking if the Site access Timeline has already been serialized or not
 			final String filename = generateSerializationName(targetSite, hashConstantBE);
@@ -592,8 +570,8 @@ public class CompleteMission extends SimpleMission {
 			final Timeline timeline = entry.getValue();
 			// Getting the access intervals
 			final AbsoluteDateIntervalsList accessIntervals = new AbsoluteDateIntervalsList();
-			for (final Phenomenon accessWindow : timeline.getPhenomenaList()) {
-				// The Phenomena are sorted chronologically so the accessIntervals List is too
+			for (final Phenomenon accessWindow : timeline.getPhenomenaList()) { // phenomemon = fenetre d'observation sur laquelle tous les critères sont remplis
+				// The Phenomena are sorted chronologically so the accessIntervals List is too // access interval -> juste le temps
 				final AbsoluteDateInterval accessInterval = accessWindow.getTimespan();
 				accessIntervals.add(accessInterval);
 				logger.info(accessInterval.toString());
@@ -650,8 +628,8 @@ public class CompleteMission extends SimpleMission {
 				 * of dates defining your observation window : {obsStart;obsEnd}, with
 				 * obsEnd.durationFrom(obsStart) == ConstantsBE.INTEGRATION_TIME.
 				 * 
-				 * Then you can use those dates to create your AtittudeLawLeg that you will
-				 * insert inside the observaiton pla, for this target. Reminder : only one
+				 * Then you can use those dates to create your AttitudeLawLeg that you will
+				 * insert inside the observation plan, for this target. Reminder : only one
 				 * observation in the observation plan per target !
 				 * 
 				 * WARNING : what we do here doesn't work, we didn't check that there wasn't
@@ -662,16 +640,51 @@ public class CompleteMission extends SimpleMission {
 				 */
 				// Here we use the middle of the accessInterval to define our dates of
 				// observation
-				final AbsoluteDate middleDate = accessInterval.getMiddleDate();
+				final AbsoluteDate middleDate = accessInterval.getMiddleDate(); // on observe la ville au milieu du créneau d'observation, on estime que c'est à ce moment où on la voit le mieux
 				final AbsoluteDate obsStart = middleDate.shiftedBy(-ConstantsBE.INTEGRATION_TIME / 2);
 				final AbsoluteDate obsEnd = middleDate.shiftedBy(ConstantsBE.INTEGRATION_TIME / 2);
 				final AbsoluteDateInterval obsInterval = new AbsoluteDateInterval(obsStart, obsEnd);
-				// Then, we create our AttitudeLawLeg, that we name using the name of the target
-				final String legName = "OBS_" + target.getName();
-				final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
+				final AbsoluteDateInterval obsIntervalSlew = new AbsoluteDateInterval(obsStart.shiftedBy(-this.getSatellite().getMaxSlewDuration()),
+						obsEnd.shiftedBy(this.getSatellite().getMaxSlewDuration())); // intervalle max qu'il faut dans le pire des cas (dépointage max)
 
-				// Finally, we add our leg to the plan
-				this.observationPlan.put(target, obsLeg);
+				// Boolean to check if the observation is compatible with our existing plan
+				boolean obsCompatible = true;
+
+				// If the observation plan is empty, we can add the observation
+				if (this.observationPlan.isEmpty()) {
+					obsCompatible = true;
+				} else {
+					// If the observation plan is not empty, we need to check if the new observation
+					// is compatible with the existing plan
+					for (final Entry<Site, AttitudeLawLeg> obs : this.observationPlan.entrySet()) {
+						// Getting the observation interval of the existing observation
+						final AbsoluteDateInterval existingObsInterval = obs.getValue().getTimeInterval();
+						// Checking if the new observation is compatible with the existing one
+						if (obsIntervalSlew.getIntersectionWith(existingObsInterval).getDuration() > 0) {
+							obsCompatible = false;
+							break;
+						}
+					}
+				}
+				
+				// If the observation is compatible with the existing plan, we can add it
+				if (obsCompatible) {
+					// Creating the AttitudeLawLeg for the observation
+					final String legName = "OBS_" + target.getName();
+					final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
+					// Adding the observation to the plan
+					this.observationPlan.put(target, obsLeg);
+					// When we add an observation, we break out of the loop for this target
+					break;
+				}
+
+
+				// // Then, we create our AttitudeLawLeg, that we name using the name of the target
+				// final String legName = "OBS_" + target.getName();
+				// final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
+
+				// // Finally, we add our leg to the plan
+				// this.observationPlan.put(target, obsLeg);
 
 			}
 
@@ -833,12 +846,9 @@ public class CompleteMission extends SimpleMission {
 		 * you use the following constructor : TargetGroundPointing(BodyShape, Vector3D,
 		 * Vector3D, Vector3D) specifying the line of sight axis and the normal axis.
 		 */
-		/*
-		 * Complete the code below to create your observation law and return it
-		 */
 		
-		TargetGroundPointing target_coordo = new TargetGroundPointing(this.getEarth(), target.getPoint()); /** ajouter arguments */
-		return null;
+		TargetGroundPointing satAttitude = new TargetGroundPointing(this.getEarth(), target.getPoint(), this.getSatellite().getSensorAxis(), this.getSatellite().getFrameXAxis()); 
+		return satAttitude;
 	}
 
 	/**
