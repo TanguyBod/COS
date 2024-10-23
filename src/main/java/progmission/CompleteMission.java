@@ -239,9 +239,9 @@ public class CompleteMission extends SimpleMission {
 			siteAccessTimeline.addPhenomenon(phenom);
 	   	}
 
-		ProjectUtils.printTimeline(timeline1);
-		ProjectUtils.printTimeline(timeline2);
-		ProjectUtils.printTimeline(timeline3);
+		// ProjectUtils.printTimeline(timeline1);
+		// ProjectUtils.printTimeline(timeline2);
+		// ProjectUtils.printTimeline(timeline3);
 
 		// Define and use your own criteria, here is an example (use the right strings
 		// defined when naming the phenomenon in the GenericCodingEventDetector)
@@ -561,8 +561,8 @@ public class CompleteMission extends SimpleMission {
 		 * plan, try to code a suboptimal algorithm anyway, we will value any idea you
 		 * have. For example, try with a plan where you have only one observation per
 		 * satellite pass over France. With that kind of plan, you make sure all
-		 * cinematic constraint are respected (no slew to fast for the satellite
-		 * agility) and you have a basic plan to use to build your cinematic plan and
+		 * kinematic constraints are respected (no slew to fast for the satellite
+		 * agility) and you have a basic plan to use to build your kinematic plan and
 		 * validate with VTS visualization.
 		 * 
 		 * Tip 2 : We provide the observation plan format : a Map of AttitudeLawLeg. In
@@ -836,6 +836,8 @@ public class CompleteMission extends SimpleMission {
 		/*
 		 * Complete the code below to create your observation law and return it
 		 */
+		
+		TargetGroundPointing target_coordo = new TargetGroundPointing(this.getEarth(), target.getPoint()); /** ajouter arguments */
 		return null;
 	}
 
