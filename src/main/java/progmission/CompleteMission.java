@@ -2,9 +2,13 @@ package progmission;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Iterator;
 
 import org.slf4j.Logger;
 
@@ -660,7 +664,7 @@ public class CompleteMission extends SimpleMission {
 						// Getting the observation interval of the existing observation
 						final AbsoluteDateInterval existingObsInterval = obs.getValue().getTimeInterval();
 						// Checking if the new observation is compatible with the existing one
-						if (obsIntervalSlew.getIntersectionWith(existingObsInterval).getDuration() > 0) {
+						if (obsIntervalSlew.getIntersectionWith(existingObsInterval) != null) {
 							obsCompatible = false;
 							break;
 						}
@@ -741,66 +745,113 @@ public class CompleteMission extends SimpleMission {
 		 * able to add it to the StrictAttitudeLegsSequence as every other leg.
 		 */
 		logger.info("============= Computing Cinematic Plan =============");
-		/*
-		 * Example of code using our observation plan, let's say we only have one obs
-		 * pointing Paris.
-		 * 
-		 * Then we are going to create a very basic cinematic plan : nadir law => slew
-		 * => obsParis => slew => nadir law
-		 * 
-		 * To do that, we need to compute the slew duration from the end of nadir law to
-		 * the begining of Paris obs and then from the end of Paris obs to the begining
-		 * of nadir law. For that, we use the Satellite#computeSlewDurationMethod() as
-		 * before. We know we have to the time to perform the slew thanks to the
-		 * cinematic checks we already did during the observation plan computation.
-		 */
-		// Getting the Paris Site
-		final Site paris = this.getSiteList().get(0);
-		// Getting the associated observation leg defined previously
-		final AttitudeLeg parisObsLeg = observationPlan.get(paris);
 
-		// Getting our nadir law
-		final AttitudeLaw nadirLaw = this.getSatellite().getDefaultAttitudeLaw();
+		// We first need to sort the observation plan by date
+		List<Entry<Site, AttitudeLawLeg>> entryList = new ArrayList<>(observationPlan.entrySet());
+		
+		// Sort the list based on the date from obsLeg.getDate()
+        entryList.sort(Comparator.comparing(entry -> entry.getValue().getDate()));
 
-		// Getting all the dates we need to compute our slews
-		final AbsoluteDate start = this.getStartDate();
-		final AbsoluteDate end = this.getEndDate();
-		final AbsoluteDate obsStart = parisObsLeg.getDate();
-		final AbsoluteDate obsEnd = parisObsLeg.getEnd();
+		Iterator<Entry<Site, AttitudeLawLeg>> iterator = entryList.iterator();
 
-		// For the slew nadir => paris and paris => nadir, we will use the maximum
-		// duration because we have a lot of time here. In practice, you will use either
-		// the maximum possible time if you have nothing else planned around or the
-		// available time coming from the duration until next observation programmed.
-		final AbsoluteDate endNadirLaw1 = obsStart.shiftedBy(-getSatellite().getMaxSlewDuration());
-		final AbsoluteDate startNadirLaw2 = obsEnd.shiftedBy(+getSatellite().getMaxSlewDuration());
+        if (iterator.hasNext()) {
+            Entry<Site, AttitudeLawLeg> firstEntry = iterator.next();
+            Site firstSite = firstEntry.getKey();
+            AttitudeLawLeg firstObsLeg = firstEntry.getValue();
 
-		// The propagator will be used to compute Attitudes
-		final KeplerianPropagator propagator = this.createDefaultPropagator();
+            // Add nadir1 and slew1 for the first observation
+            final AttitudeLaw nadirLaw = this.getSatellite().getDefaultAttitudeLaw();
+            final AbsoluteDate start = this.getStartDate();
+            final AbsoluteDate endNadirLaw1 = firstObsLeg.getDate().shiftedBy(-getSatellite().getMaxSlewDuration());
+            final AttitudeLawLeg nadir1 = new AttitudeLawLeg(nadirLaw, start, endNadirLaw1, "Nadir_Law_1" );
+            final ConstantSpinSlew slew1 = new ConstantSpinSlew(nadirLaw.getAttitude(createDefaultPropagator(), endNadirLaw1, getEme2000()), firstObsLeg.getAttitude(createDefaultPropagator(), firstObsLeg.getDate(), getEme2000()), "Slew_Nadir_to_" + firstSite.getName());
 
-		// Computing the Attitudes used to compute the slews
-		final Attitude startObsAttitude = parisObsLeg.getAttitude(propagator, obsStart, getEme2000());
-		final Attitude endObsAttitude = parisObsLeg.getAttitude(propagator, obsEnd, getEme2000());
-		final Attitude endNadir1Attitude = nadirLaw.getAttitude(propagator, endNadirLaw1, getEme2000());
-		final Attitude startNadir2Attitude = nadirLaw.getAttitude(propagator, startNadirLaw2, getEme2000());
+            this.cinematicPlan.add(nadir1);
+            this.cinematicPlan.add(slew1);
+            this.cinematicPlan.add(firstObsLeg);
 
-		// Finally computing the slews
-		// From nadir law 1 to Paris observation
-		final ConstantSpinSlew slew1 = new ConstantSpinSlew(endNadir1Attitude, startObsAttitude, "Slew_Nadir_to_Paris");
-		// From Paris observation to nadir law 2
-		final ConstantSpinSlew slew2 = new ConstantSpinSlew(endObsAttitude, startNadir2Attitude, "Slew_Paris_to_Nadir");
+            // Handle the slews between consecutive observations
+            Entry<Site, AttitudeLawLeg> prevEntry = firstEntry;
+            while (iterator.hasNext()) {
+                Entry<Site, AttitudeLawLeg> currentEntry = iterator.next();
+                Site currentSite = currentEntry.getKey();
+                Site previousSite = prevEntry.getKey();
+                AttitudeLawLeg currentObsLeg = currentEntry.getValue();
+                AttitudeLawLeg previousObsLeg = prevEntry.getValue();
 
-		// We create our two Nadir legs using the dates we computed
-		final AttitudeLawLeg nadir1 = new AttitudeLawLeg(nadirLaw, start, endNadirLaw1, "Nadir_Law_1");
-		final AttitudeLawLeg nadir2 = new AttitudeLawLeg(nadirLaw, startNadirLaw2, end, "Nadir_Law_2");
+        	    final KeplerianPropagator propagator = this.createDefaultPropagator();
+    		    final AbsoluteDate obsStart = previousObsLeg.getEnd();
+    		    final AbsoluteDate obsEnd = currentObsLeg.getDate();
+                // Add slew between the current observation and the next
+                final Attitude startObsAttitude = previousObsLeg.getAttitude(propagator, obsStart, getEme2000());
+                final Attitude endObsAttitude = currentObsLeg.getAttitude(propagator, obsEnd, getEme2000());
+                
+                final ConstantSpinSlew currentSlew = new ConstantSpinSlew(startObsAttitude,endObsAttitude,"Slew_" + previousSite.getName() + "_to_" + currentSite.getName());
 
-		// Finally we can add all those legs to our cinametic plan, in the chronological
-		// order
-		this.cinematicPlan.add(nadir1);
-		this.cinematicPlan.add(slew1);
-		this.cinematicPlan.add(parisObsLeg);
-		this.cinematicPlan.add(slew2);
-		this.cinematicPlan.add(nadir2);
+                this.cinematicPlan.add(currentSlew);
+                this.cinematicPlan.add(currentObsLeg);
+
+                prevEntry = currentEntry;
+            }
+
+            // Add nadir2 and slew2 for the last observation
+            final AbsoluteDate end = this.getEndDate();
+            final AbsoluteDate startNadirLaw2 = prevEntry.getValue().getEnd().shiftedBy(getSatellite().getMaxSlewDuration());
+            final AttitudeLawLeg nadir2 = new AttitudeLawLeg(nadirLaw, startNadirLaw2, end, "Nadir_Law_2");
+            final ConstantSpinSlew slew2 = new ConstantSpinSlew(prevEntry.getValue().getAttitude(createDefaultPropagator(), prevEntry.getValue().getEnd(), getEme2000()), nadirLaw.getAttitude(createDefaultPropagator(), startNadirLaw2, getEme2000()), "Slew_" + prevEntry.getKey().getName() + "_to_Nadir");
+
+            this.cinematicPlan.add(slew2);
+            this.cinematicPlan.add(nadir2);
+		}
+
+		/* 
+		for (final Entry<Site, AttitudeLawLeg> entry : entryList) {
+			// Getting the associated Site
+			final Site target = entry.getKey();
+			// Getting the associated observation leg defined previously
+			final AttitudeLeg obsLeg = observationPlan.get(target);
+
+			// Getting our nadir law
+			final AttitudeLaw nadirLaw = this.getSatellite().getDefaultAttitudeLaw();
+
+			// Getting all the dates we need to compute our slews
+			final AbsoluteDate start = this.getStartDate();
+			final AbsoluteDate end = this.getEndDate();
+			final AbsoluteDate obsStart = obsLeg.getDate();
+			final AbsoluteDate obsEnd = obsLeg.getEnd();
+
+			final AbsoluteDate endNadirLaw1 = obsStart.shiftedBy(-getSatellite().getMaxSlewDuration());
+			final AbsoluteDate startNadirLaw2 = obsEnd.shiftedBy(+getSatellite().getMaxSlewDuration());
+
+			final KeplerianPropagator propagator = this.createDefaultPropagator();
+
+			final Attitude startObsAttitude = obsLeg.getAttitude(propagator, obsStart, getEme2000());
+			final Attitude endObsAttitude = obsLeg.getAttitude(propagator, obsEnd, getEme2000());
+			final Attitude endNadir1Attitude = nadirLaw.getAttitude(propagator, endNadirLaw1, getEme2000());
+			final Attitude startNadir2Attitude = nadirLaw.getAttitude(propagator, startNadirLaw2, getEme2000());
+			
+			final ConstantSpinSlew slew1 = new ConstantSpinSlew(endNadir1Attitude, startObsAttitude, "Slew_Nadir_to_" + entry.getValue().getNature());
+			final ConstantSpinSlew slew2 = new ConstantSpinSlew(endObsAttitude, startNadir2Attitude, "Slew_" + entry.getValue().getNature() + "_to_Nadir");
+			
+			final AttitudeLawLeg nadir1 = new AttitudeLawLeg(nadirLaw, start, endNadirLaw1, "Nadir_Law_1");
+			final AttitudeLawLeg nadir2 = new AttitudeLawLeg(nadirLaw, startNadirLaw2, end, "Nadir_Law_2");
+
+			System.out.println("nadir1: " + nadir1.getTimeInterval().getLowerData() + " to " + nadir1.getTimeInterval().getUpperData());
+			System.out.println("slew1: " + slew1.getTimeInterval().getLowerData() + " to " + slew1.getTimeInterval().getUpperData());
+			System.out.println("obsLeg: " + obsLeg.getTimeInterval().getLowerData() + " to " + obsLeg.getTimeInterval().getUpperData());
+			System.out.println("slew2: " + slew2.getTimeInterval().getLowerData() + " to " + slew2.getTimeInterval().getUpperData());
+			System.out.println("nadir2: " + nadir2.getTimeInterval().getLowerData() + " to " + nadir2.getTimeInterval().getUpperData());
+			System.out.println("------------------------------------------- ");
+
+
+			this.cinematicPlan.add(nadir1);
+			this.cinematicPlan.add(slew1);
+			this.cinematicPlan.add(obsLeg);
+			this.cinematicPlan.add(slew2);
+			this.cinematicPlan.add(nadir2);
+		}
+		*/
+
 
 		/**
 		 * Now your job is finished, the two following methods will finish the job for

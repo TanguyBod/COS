@@ -29,7 +29,7 @@ public class CompleteMissionMain {
 		double t0 = System.currentTimeMillis();
 
 		// Instantiating our mission using the CompleteMission object.
-		final CompleteMission mission = new CompleteMission("BE Supaero mission", 50);
+		final CompleteMission mission = new CompleteMission("BE Supaero mission", 20);
 		logger.info("Complete simulation starting ...");
 		logger.info(mission.toString());
 
@@ -39,7 +39,7 @@ public class CompleteMissionMain {
 		Map<Site, Timeline> accessPlan = mission.computeAccessPlan();
 		logger.info("Access plan : "+ accessPlan.toString());
 
-		/*
+		
 		// Then we compute the observation plan, that is to say we fill a plan with
 		// Observation objects that can be achieved one after each other by the
 		// satellite without breaking the cinematic constraints imposed by the
@@ -71,7 +71,7 @@ public class CompleteMissionMain {
 
 		// Finally, we write the VTS outputs to visualize and validate our plan
 		mission.generateVTSVisualization(cinematicPlan);
-		*/
+		
 		
 		logger.info("\n\nSimulation done");
 

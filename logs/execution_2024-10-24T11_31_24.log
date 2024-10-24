@@ -1,0 +1,111 @@
+[11:31:24] INFO BEProgMissionLogger | ##################################################
+[11:31:26] INFO BEProgMissionLogger | Complete simulation starting ...
+[11:31:26] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[11:31:26] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[11:31:26] INFO BEProgMissionLogger |  Site : PARIS
+[11:31:26] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	|___________________________
+[11:31:26] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[11:31:26] INFO BEProgMissionLogger |  Site : MARSEILLE
+[11:31:26] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	|___________________________
+[11:31:26] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[11:31:26] INFO BEProgMissionLogger |  Site : LYON
+[11:31:26] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[11:31:26] INFO BEProgMissionLogger | 	|___________________________
+[11:31:26] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[11:31:26] INFO BEProgMissionLogger | Access plan : {LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@65f8f5ae, PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@431cd9b2, MARSEILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@38467116}
+[11:31:26] INFO BEProgMissionLogger | ============= Computing Observation Plan =============
+[11:31:26] INFO BEProgMissionLogger | Current target site : LYON
+[11:31:26] INFO BEProgMissionLogger | ] 2010-09-01T07:09:30.731 ; 2010-09-01T07:13:12.017 [
+[11:31:26] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.7268402031981
+[11:31:26] INFO BEProgMissionLogger | Actual duration of the slew : 221.28688397057238
+[11:31:26] INFO BEProgMissionLogger | Current target site : PARIS
+[11:31:26] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.585 ; 2010-09-01T07:12:06.657 [
+[11:31:26] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.2399740723378
+[11:31:26] INFO BEProgMissionLogger | Actual duration of the slew : 180.07244136116077
+[11:31:26] INFO BEProgMissionLogger | ] 2010-09-02T07:48:05.717 ; 2010-09-02T07:50:45.001 [
+[11:31:26] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.34281355527444
+[11:31:26] INFO BEProgMissionLogger | Actual duration of the slew : 159.2838322405397
+[11:31:26] INFO BEProgMissionLogger | Current target site : MARSEILLE
+[11:31:26] INFO BEProgMissionLogger | ] 2010-09-01T07:10:04.719 ; 2010-09-01T07:13:53.825 [
+[11:31:26] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.79389417033106
+[11:31:26] INFO BEProgMissionLogger | Actual duration of the slew : 229.10668321764456
+[11:31:26] INFO BEProgMissionLogger | ] 2010-09-03T06:51:10.176 ; 2010-09-03T06:54:35.292 [
+[11:31:26] INFO BEProgMissionLogger | Maximum possible duration of the slew : 37.7985150234269
+[11:31:26] INFO BEProgMissionLogger | Actual duration of the slew : 205.11546584946058
+[11:31:26] INFO BEProgMissionLogger | Observation plan : {LYON=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@7e990ed7, PARIS=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@c05fddc, MARSEILLE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@25df00a0}
+[11:31:26] INFO BEProgMissionLogger | ============= Computing Cinematic Plan =============
+[11:31:27] INFO BEProgMissionLogger | Cinematic plan : Size : 9
+1 : [ 2010-09-01T00:00:00.000 ; 2010-09-01T07:10:37.207 ] — Nadir_Law_1
+2 : [ 2010-09-01T07:10:37.207 ; 2010-09-01T07:11:16.374 ] — Slew_Nadir_to_LYON
+3 : [ 2010-09-01T07:11:16.374 ; 2010-09-01T07:11:26.374 ] — OBS_LYON
+4 : [ 2010-09-01T07:11:26.374 ; 2010-09-02T07:49:20.359 ] — Slew_LYON_to_PARIS
+5 : [ 2010-09-02T07:49:20.359 ; 2010-09-02T07:49:30.359 ] — OBS_PARIS
+6 : [ 2010-09-02T07:49:30.359 ; 2010-09-03T06:52:47.734 ] — Slew_PARIS_to_MARSEILLE
+7 : [ 2010-09-03T06:52:47.734 ; 2010-09-03T06:52:57.734 ] — OBS_MARSEILLE
+8 : [ 2010-09-03T06:52:57.734 ; 2010-09-03T06:53:36.901 ] — Slew_MARSEILLE_to_Nadir
+9 : [ 2010-09-03T06:53:36.901 ; 2010-09-08T00:00:00.000 ] — Nadir_Law_2
+
+[11:31:27] INFO BEProgMissionLogger | Nadir_Law_1
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | Slew_Nadir_to_LYON
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | OBS_LYON
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | Slew_LYON_to_PARIS
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | OBS_PARIS
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | Slew_PARIS_to_MARSEILLE
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | OBS_MARSEILLE
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | Slew_MARSEILLE_to_Nadir
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | Nadir_Law_2
+[11:31:27] INFO BEProgMissionLogger | Cinematic is ok
+[11:31:27] INFO BEProgMissionLogger | ==== Is the cinematic plan valid ? => true ==== 
+[11:31:27] INFO BEProgMissionLogger | Plan validity : true
+[11:31:27] INFO BEProgMissionLogger | Number of cities visited : 3
+[11:31:27] INFO BEProgMissionLogger | ==== Evaluation of the final score ====
+[11:31:27] INFO BEProgMissionLogger | Site : LYON GeodeticPoint: name=LYON, latitude=0.7986434670908332, longitude=0.08449819587312826, altitude=237.0
+[11:31:27] INFO BEProgMissionLogger | Incidence angle rad : 0.39930144812595514
+[11:31:27] INFO BEProgMissionLogger | Incidence angle deg : 22.878287731079205
+[11:31:27] INFO BEProgMissionLogger |  => Contribution of LYON : 474900.0*0.9213327981663368 = 437540.9458491934
+[11:31:27] INFO BEProgMissionLogger | Site : PARIS GeodeticPoint: name=PARIS, latitude=0.8527678725244294, longitude=0.04091837164838106, altitude=0.0
+[11:31:27] INFO BEProgMissionLogger | Incidence angle rad : 0.4765304651050046
+[11:31:27] INFO BEProgMissionLogger | Incidence angle deg : 27.30318445992291
+[11:31:27] INFO BEProgMissionLogger |  => Contribution of PARIS : 2211000.0*0.8885917398564426 = 1964676.3368225945
+[11:31:27] INFO BEProgMissionLogger | Site : MARSEILLE GeodeticPoint: name=MARSEILLE, latitude=0.7556699702482289, longitude=0.09383570737129793, altitude=320.0
+[11:31:27] INFO BEProgMissionLogger | Incidence angle rad : 0.5622528414542316
+[11:31:27] INFO BEProgMissionLogger | Incidence angle deg : 32.21471483456568
+[11:31:27] INFO BEProgMissionLogger |  => Contribution of MARSEILLE : 851400.0*0.84605628370533 = 720332.3199467179
+[11:31:27] INFO BEProgMissionLogger | Final score :3122549.6026185057
+[11:31:27] INFO BEProgMissionLogger | Duration of the score computation : 0.017
+[11:31:27] INFO BEProgMissionLogger | Total duration : 2.239
+[11:31:27] INFO BEProgMissionLogger | 
+
+Writing VTS outputs, please wait...
+[11:31:27] INFO BEProgMissionLogger | VTS POI file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Target_Sites_POI.txt
+[11:31:28] INFO BEProgMissionLogger | VTS OEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Satellite_Trajectory_OEM.txt
+[11:31:57] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Nadir_Pointing_AEM.txt
+[11:32:21] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_AEM.txt
+[11:32:21] INFO BEProgMissionLogger | VTS MEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_Events_MEM.txt
+[11:32:21] INFO BEProgMissionLogger | VTS outputs written
+[11:32:21] INFO BEProgMissionLogger | 
+
+Simulation done
+[11:32:21] INFO BEProgMissionLogger | ##################################################

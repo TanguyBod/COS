@@ -1,0 +1,41 @@
+[10:58:28] INFO BEProgMissionLogger | ##################################################
+[10:58:33] INFO BEProgMissionLogger | Complete simulation starting ...
+[10:58:33] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[10:58:33] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[10:58:33] INFO BEProgMissionLogger |  Site : PARIS
+[10:58:34] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	|___________________________
+[10:58:34] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[10:58:34] INFO BEProgMissionLogger |  Site : MARSEILLE
+[10:58:34] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	|___________________________
+[10:58:34] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[10:58:34] INFO BEProgMissionLogger |  Site : LYON
+[10:58:34] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[10:58:34] INFO BEProgMissionLogger | 	|___________________________
+[10:58:34] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[10:58:34] INFO BEProgMissionLogger | Access plan : {LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@65f8f5ae, PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@431cd9b2, MARSEILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@38467116}
+[10:58:34] INFO BEProgMissionLogger | ============= Computing Observation Plan =============
+[10:58:34] INFO BEProgMissionLogger | Current target site : LYON
+[10:58:34] INFO BEProgMissionLogger | ] 2010-09-01T07:09:30.731 ; 2010-09-01T07:13:12.017 [
+[10:58:34] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.7268402031981
+[10:58:34] INFO BEProgMissionLogger | Actual duration of the slew : 221.28688397057238
+[10:58:34] INFO BEProgMissionLogger | Current target site : PARIS
+[10:58:34] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.585 ; 2010-09-01T07:12:06.657 [
+[10:58:34] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.2399740723378
+[10:58:34] INFO BEProgMissionLogger | Actual duration of the slew : 180.07244136116077
+[10:58:34] INFO BEProgMissionLogger | ] 2010-09-02T07:48:05.717 ; 2010-09-02T07:50:45.001 [
+[10:58:34] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.34281355527444
+[10:58:34] INFO BEProgMissionLogger | Actual duration of the slew : 159.2838322405397
