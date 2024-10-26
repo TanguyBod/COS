@@ -787,11 +787,11 @@ public class CompleteMission extends SimpleMission {
 				// One max slew duration between two observations is enough to add a nadir between them
 				// In worst case scenario, we need 1/2 maw slew duration from one observation to nadir
 				// and 1/2 max slew duration from nadir to the next observation so 1 max slew duration total
-				if (dateStartCurObs.durationFrom(dateEndPrevObs) > 1.5 * getSatellite().getMaxSlewDuration()) { 
+				if (dateStartCurObs.durationFrom(dateEndPrevObs) > 1.2 * getSatellite().getMaxSlewDuration()) { 
 
 					// Getting all dates needed to compute our slews
-					final AbsoluteDate dateStartNadirLaw = dateEndPrevObs.shiftedBy(+0.75*getSatellite().getMaxSlewDuration());
-					final AbsoluteDate dateEndNadirLaw = dateStartCurObs.shiftedBy(-0.75*getSatellite().getMaxSlewDuration());
+					final AbsoluteDate dateStartNadirLaw = dateEndPrevObs.shiftedBy(+0.60*getSatellite().getMaxSlewDuration());
+					final AbsoluteDate dateEndNadirLaw = dateStartCurObs.shiftedBy(-0.60*getSatellite().getMaxSlewDuration());
 
 					// Creating Attitudes for the slews 
 					final Attitude startSlewObsNadirAttitude = previousObsLeg.getAttitude(propagator, dateEndPrevObs, getEme2000());

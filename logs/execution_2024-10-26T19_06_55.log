@@ -1,0 +1,567 @@
+[19:06:55] INFO BEProgMissionLogger | ##################################################
+[19:06:57] INFO BEProgMissionLogger | Complete simulation starting ...
+[19:06:57] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[19:06:57] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[19:06:57] INFO BEProgMissionLogger |  Site : PARIS
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : MARSEILLE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : LYON
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : TOULOUSE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.871 (UTC) ; 2010-09-01T07:13:03.558 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:26.596 (UTC) ; 2010-09-03T06:53:16.707 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:43.211 (UTC) ; 2010-09-04T07:33:32.179 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:36.155 (UTC) ; 2010-09-06T07:14:29.131 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/TOULOUSE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : NICE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:16.969 (UTC) ; 2010-09-01T07:13:10.545 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:16.539 (UTC) ; 2010-09-03T06:53:59.141 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:26.222 (UTC) ; 2010-09-05T06:34:35.508 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/NICE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : NANTES
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:58.237 (UTC) ; 2010-09-02T07:51:51.665 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:54.784 (UTC) ; 2010-09-04T07:32:43.533 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:59.140 (UTC) ; 2010-09-06T07:13:25.476 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/NANTES_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : STRASBOURG
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:59.523 (UTC) ; 2010-09-01T07:11:50.931 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:01.289 (UTC) ; 2010-09-03T06:52:35.820 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:30:12.642 (UTC) ; 2010-09-05T06:33:09.007 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/STRASBOURG_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : MONTPELLIER
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:34.814 (UTC) ; 2010-09-01T07:13:13.578 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:46.807 (UTC) ; 2010-09-03T06:53:47.287 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:30.113 (UTC) ; 2010-09-06T07:14:20.784 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/MONTPELLIER_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : BORDEAUX
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:07.010 (UTC) ; 2010-09-01T07:12:20.030 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:35.619 (UTC) ; 2010-09-02T07:52:22.869 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:27.477 (UTC) ; 2010-09-04T07:33:21.078 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:27.125 (UTC) ; 2010-09-06T07:14:09.377 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/BORDEAUX_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : LILLE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:00.511 (UTC) ; 2010-09-01T07:11:04.942 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:56.981 (UTC) ; 2010-09-02T07:50:38.425 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:25.393 (UTC) ; 2010-09-03T06:51:22.422 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:46.391 (UTC) ; 2010-09-04T07:31:39.410 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:41.672 (UTC) ; 2010-09-06T07:12:32.452 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/LILLE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : RENNES
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:44.846 (UTC) ; 2010-09-02T07:51:38.606 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:42.403 (UTC) ; 2010-09-04T07:32:29.021 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:47.786 (UTC) ; 2010-09-06T07:13:09.497 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/RENNES_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : REIMS
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:11.535 (UTC) ; 2010-09-01T07:11:34.838 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:27.762 (UTC) ; 2010-09-03T06:52:02.239 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:07.506 (UTC) ; 2010-09-04T07:31:55.585 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:59.519 (UTC) ; 2010-09-06T07:12:53.184 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/REIMS_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : LE HAVRE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:54.721 (UTC) ; 2010-09-01T07:10:57.455 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:18.251 (UTC) ; 2010-09-02T07:51:10.393 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:12.781 (UTC) ; 2010-09-04T07:32:04.597 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:13.914 (UTC) ; 2010-09-06T07:12:50.105 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/LE HAVRE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : SAINT-ETIENNE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:04.475 (UTC) ; 2010-09-01T07:12:42.782 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:15.602 (UTC) ; 2010-09-03T06:53:17.044 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:59.637 (UTC) ; 2010-09-06T07:13:50.686 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/SAINT-ETIENNE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : TOULON
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.898 (UTC) ; 2010-09-01T07:13:22.390 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:34.235 (UTC) ; 2010-09-03T06:54:06.458 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:50.108 (UTC) ; 2010-09-05T06:34:35.877 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/TOULON_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : GRENOBLE
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:00.713 (UTC) ; 2010-09-01T07:12:48.591 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.364 (UTC) ; 2010-09-03T06:53:29.413 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:33:42.562 (UTC) ; 2010-09-05T06:33:54.281 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:02.948 (UTC) ; 2010-09-06T07:12:54.344 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/GRENOBLE_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : DIJON
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.632 (UTC) ; 2010-09-01T07:12:11.491 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:42.543 (UTC) ; 2010-09-03T06:52:46.701 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:28.003 (UTC) ; 2010-09-06T07:13:19.688 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/DIJON_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : ANGERS
+[19:06:57] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:33.674 (UTC) ; 2010-09-01T07:11:27.197 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:52.288 (UTC) ; 2010-09-02T07:51:43.898 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:46.618 (UTC) ; 2010-09-04T07:32:38.625 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:48.178 (UTC) ; 2010-09-06T07:13:24.010 (UTC) ]
+[19:06:57] INFO BEProgMissionLogger | 	|___________________________
+[19:06:57] INFO BEProgMissionLogger | accesses/ANGERS_562931739.serhas been loaded successfully!
+[19:06:57] INFO BEProgMissionLogger |  Site : LE MANS
+[19:06:58] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:12.721 (UTC) ; 2010-09-01T07:11:28.305 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:42.583 (UTC) ; 2010-09-02T07:51:32.421 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:35.630 (UTC) ; 2010-09-04T07:32:28.771 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:35.548 (UTC) ; 2010-09-06T07:13:16.144 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	|___________________________
+[19:06:58] INFO BEProgMissionLogger | accesses/LE MANS_562931739.serhas been loaded successfully!
+[19:06:58] INFO BEProgMissionLogger |  Site : AIX-EN-PROVENCE
+[19:06:58] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:26.838 (UTC) ; 2010-09-01T07:13:15.883 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:32.269 (UTC) ; 2010-09-03T06:53:57.331 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:01.071 (UTC) ; 2010-09-05T06:34:22.485 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:30.598 (UTC) ; 2010-09-06T07:12:22.290 (UTC) ]
+[19:06:58] INFO BEProgMissionLogger | 	|___________________________
+[19:06:58] INFO BEProgMissionLogger | accesses/AIX-EN-PROVENCE_562931739.serhas been loaded successfully!
+[19:06:58] INFO BEProgMissionLogger | Access plan : {MARSEILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@3feb2dda, LE HAVRE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@6a8658ff, LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@1c742ed4, SAINT-ETIENNE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@333d4a8c, BORDEAUX=fr.cnes.sirius.patrius.events.postprocessing.Timeline@55de24cc, REIMS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@dc7df28, DIJON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@30f842ca, TOULOUSE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@69c81773, STRASBOURG=fr.cnes.sirius.patrius.events.postprocessing.Timeline@4d14b6c2, AIX-EN-PROVENCE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@7e990ed7, MONTPELLIER=fr.cnes.sirius.patrius.events.postprocessing.Timeline@c05fddc, TOULON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@25df00a0, GRENOBLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@4d15107f, RENNES=fr.cnes.sirius.patrius.events.postprocessing.Timeline@7b4c50bc, NANTES=fr.cnes.sirius.patrius.events.postprocessing.Timeline@5884a914, PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@50378a4, NICE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@60f00693, LE MANS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@79207381, LILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@491b9b8, ANGERS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@1a4927d6}
+[19:06:58] INFO BEProgMissionLogger | ============= Computing Observation Plan =============
+[19:06:58] INFO BEProgMissionLogger | Current target site : MARSEILLE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:04.719 ; 2010-09-01T07:13:53.825 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.79389417033106
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 229.10668321764456
+[19:06:58] INFO BEProgMissionLogger | Current target site : LE HAVRE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:28.721 ; 2010-09-01T07:11:31.455 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 22.13908822704291
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 122.73468886003933
+[19:06:58] INFO BEProgMissionLogger | Current target site : LYON
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:30.731 ; 2010-09-01T07:13:12.017 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.7268402031981
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 221.28688397057238
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:40.173 ; 2010-09-03T06:53:48.169 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 33.93329815121503
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 187.99594195847638
+[19:06:58] INFO BEProgMissionLogger | Current target site : SAINT-ETIENNE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:38.475 ; 2010-09-01T07:13:16.782 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.00424267678855
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 218.30731276370227
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:49.602 ; 2010-09-03T06:53:51.044 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.5486288565048
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 181.44157359012735
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:33.637 ; 2010-09-06T07:14:24.686 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.44589776485297
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 231.04907699672788
+[19:06:58] INFO BEProgMissionLogger | Current target site : BORDEAUX
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:41.010 ; 2010-09-01T07:12:54.030 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 23.515909064190048
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 133.0204532766029
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:49:09.619 ; 2010-09-02T07:52:56.869 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.421557274596225
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 227.25013387634934
+[19:06:58] INFO BEProgMissionLogger | Current target site : REIMS
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:08:45.535 ; 2010-09-01T07:12:08.838 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 37.34369436486239
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 203.30257617484025
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:01.762 ; 2010-09-03T06:52:36.239 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 27.025447681324817
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 154.47728216721595
+[19:06:58] INFO BEProgMissionLogger | Current target site : DIJON
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.632 ; 2010-09-01T07:12:45.491 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.110222928591305
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 218.85883980829732
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:16.543 ; 2010-09-03T06:53:20.701 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 33.10298573709896
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 184.1582333183298
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:02.003 ; 2010-09-06T07:13:53.688 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.58132727857817
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 231.68511267023612
+[19:06:58] INFO BEProgMissionLogger | Current target site : TOULOUSE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:29.871 ; 2010-09-01T07:13:37.558 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 33.87251554803426
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 187.68756430803688
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:52:00.596 ; 2010-09-03T06:53:50.707 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 20.505078491067145
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 110.11102100418375
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:30:17.211 ; 2010-09-04T07:34:06.179 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.87472922778787
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 228.96826220573982
+[19:06:58] INFO BEProgMissionLogger | Current target site : STRASBOURG
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:08:33.523 ; 2010-09-01T07:12:24.931 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.397204008825895
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 231.40765705269249
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:49:35.289 ; 2010-09-03T06:53:09.820 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 40.021158866651206
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 214.53049772170812
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-05T06:30:46.642 ; 2010-09-05T06:33:43.007 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 31.44522183113446
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 176.36501635551735
+[19:06:58] INFO BEProgMissionLogger | Current target site : AIX-EN-PROVENCE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:00.838 ; 2010-09-01T07:13:49.883 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.7742467087108
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 229.04482068166323
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:51:06.269 ; 2010-09-03T06:54:31.331 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 37.78335000005805
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 205.06145268338298
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-05T06:34:35.071 ; 2010-09-05T06:34:56.485 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 9.222873287712972
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 21.41393762904397
+[19:06:58] INFO BEProgMissionLogger | Current target site : MONTPELLIER
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:08.814 ; 2010-09-01T07:13:47.578 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.08611232131692
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 218.76421547283593
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:51:20.807 ; 2010-09-03T06:54:21.287 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.324126596560205
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 180.48028242733753
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:11:04.113 ; 2010-09-06T07:14:54.784 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.308290089288086
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 230.67111345581537
+[19:06:58] INFO BEProgMissionLogger | Current target site : TOULON
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:04.898 ; 2010-09-01T07:13:56.390 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.447187057189915
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 231.4913312781461
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:51:08.235 ; 2010-09-03T06:54:40.458 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 39.48800974557
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 212.22353156321515
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-05T06:32:24.108 ; 2010-09-05T06:35:09.877 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 29.29629402596992
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 165.7687742508193
+[19:06:58] INFO BEProgMissionLogger | Current target site : GRENOBLE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:34.713 ; 2010-09-01T07:13:22.591 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.461799680716325
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 227.87798378523843
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:40.364 ; 2010-09-03T06:54:03.413 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 37.31462162826746
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 203.04847333875182
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-05T06:34:16.562 ; 2010-09-05T06:34:28.281 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 6.893230554960522
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 11.719488285979835
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:36.948 ; 2010-09-06T07:13:28.344 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 34.733382572111175
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 171.3964420441659
+[19:06:58] INFO BEProgMissionLogger | Current target site : RENNES
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:48:18.846 ; 2010-09-02T07:52:12.606 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 45.08313121131765
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 233.75971712440608
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:29:16.403 ; 2010-09-04T07:33:03.021 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.09363590694577
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 226.61727597884135
+[19:06:58] INFO BEProgMissionLogger | Current target site : NANTES
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:48:32.237 ; 2010-09-02T07:52:25.665 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 45.008696461494424
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 233.42796407728724
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:29:28.784 ; 2010-09-04T07:33:17.533 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 43.665797519861634
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 228.74977623095657
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:33.140 ; 2010-09-06T07:13:59.476 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 38.05480725974982
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 206.33609099878683
+[19:06:58] INFO BEProgMissionLogger | Current target site : PARIS
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.585 ; 2010-09-01T07:12:06.657 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.2399740723378
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 180.07244136116077
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:48:05.717 ; 2010-09-02T07:50:45.001 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 32.34281355527444
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 159.2838322405397
+[19:06:58] INFO BEProgMissionLogger | Current target site : NICE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:50.969 ; 2010-09-01T07:13:44.545 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 45.043725082346555
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 233.57584936974098
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:50:50.539 ; 2010-09-03T06:54:33.141 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 42.07298437648143
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 222.60201812546686
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-05T06:32:00.222 ; 2010-09-05T06:35:09.508 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 34.22309177926917
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 189.2863759561371
+[19:06:58] INFO BEProgMissionLogger | Current target site : LE MANS
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:09:46.721 ; 2010-09-01T07:12:02.305 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 23.855940426664006
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 135.58368537550555
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:48:16.583 ; 2010-09-02T07:52:06.421 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.0892962558207
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 229.83746371437945
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:29:09.630 ; 2010-09-04T07:33:02.771 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.88715288353487
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 233.14098476324114
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:09.548 ; 2010-09-06T07:13:50.144 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.53417096822905
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 220.59684590128023
+[19:06:58] INFO BEProgMissionLogger | Current target site : LILLE
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:08:34.511 ; 2010-09-01T07:11:38.942 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 33.138096432148615
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 184.43068170246067
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:47:30.981 ; 2010-09-02T07:51:12.425 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 41.950159990824574
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 221.44477282989197
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-03T06:49:59.393 ; 2010-09-03T06:51:56.422 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 21.388726718606215
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 117.02904620079367
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:28:20.391 ; 2010-09-04T07:32:13.410 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.901842784224826
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 233.0188198036894
+[19:06:58] INFO BEProgMissionLogger | Current target site : ANGERS
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-01T07:10:07.674 ; 2010-09-01T07:12:01.197 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 20.93806200008379
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 113.52370841016341
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-02T07:48:26.288 ; 2010-09-02T07:52:17.898 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.54550087250513
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 231.61016970360197
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-04T07:29:20.618 ; 2010-09-04T07:33:12.625 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 44.56147369806632
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 232.00781353671994
+[19:06:58] INFO BEProgMissionLogger | ] 2010-09-06T07:10:22.178 ; 2010-09-06T07:13:58.010 [
+[19:06:58] INFO BEProgMissionLogger | Maximum possible duration of the slew : 40.33977335811006
+[19:06:58] INFO BEProgMissionLogger | Actual duration of the slew : 215.8314512517045
+[19:06:58] INFO BEProgMissionLogger | Observation plan : {MARSEILLE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@2657d4dd, LE HAVRE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@5340477f, LYON=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@47caedad, SAINT-ETIENNE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@7139992f, BORDEAUX=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@69504ae9, REIMS=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@387a8303, TOULOUSE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@28cda624, STRASBOURG=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@1500b2f3, AIX-EN-PROVENCE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@7eecb5b8, TOULON=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@126253fd, RENNES=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@57db2b13, PARIS=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@475c9c31, LILLE=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@5c86a017}
+[19:06:58] INFO BEProgMissionLogger | ============= Computing Cinematic Plan =============
+[19:06:58] INFO BEProgMissionLogger | Cinematic plan : Size : 49
+1 : [ 2010-09-01T00:00:00.000 ; 2010-09-01T07:09:45.921 ] — Nadir_Law_1
+2 : [ 2010-09-01T07:09:45.921 ; 2010-09-01T07:10:25.088 ] — Slew_Nadir_to_LE HAVRE
+3 : [ 2010-09-01T07:10:25.088 ; 2010-09-01T07:10:35.088 ] — OBS_LE HAVRE
+4 : [ 2010-09-01T07:10:35.088 ; 2010-09-01T07:10:58.588 ] — Slew_LE HAVRE_to_Nadir
+5 : [ 2010-09-01T07:10:58.588 ; 2010-09-01T07:11:30.772 ] — Nadir_Law
+6 : [ 2010-09-01T07:11:30.772 ; 2010-09-01T07:11:54.272 ] — Slew_Nadir_to_MARSEILLE
+7 : [ 2010-09-01T07:11:54.272 ; 2010-09-01T07:12:04.272 ] — OBS_MARSEILLE
+8 : [ 2010-09-01T07:12:04.272 ; 2010-09-01T07:12:27.772 ] — Slew_MARSEILLE_to_Nadir
+9 : [ 2010-09-01T07:12:27.772 ; 2010-09-02T07:48:56.859 ] — Nadir_Law
+10 : [ 2010-09-02T07:48:56.859 ; 2010-09-02T07:49:20.359 ] — Slew_Nadir_to_PARIS
+11 : [ 2010-09-02T07:49:20.359 ; 2010-09-02T07:49:30.359 ] — OBS_PARIS
+12 : [ 2010-09-02T07:49:30.359 ; 2010-09-02T07:49:53.859 ] — Slew_PARIS_to_Nadir
+13 : [ 2010-09-02T07:49:53.859 ; 2010-09-02T07:50:34.744 ] — Nadir_Law
+14 : [ 2010-09-02T07:50:34.744 ; 2010-09-02T07:50:58.244 ] — Slew_Nadir_to_BORDEAUX
+15 : [ 2010-09-02T07:50:58.244 ; 2010-09-02T07:51:08.244 ] — OBS_BORDEAUX
+16 : [ 2010-09-02T07:51:08.244 ; 2010-09-02T07:51:31.744 ] — Slew_BORDEAUX_to_Nadir
+17 : [ 2010-09-02T07:51:31.744 ; 2010-09-03T06:50:50.501 ] — Nadir_Law
+18 : [ 2010-09-03T06:50:50.501 ; 2010-09-03T06:51:14.001 ] — Slew_Nadir_to_REIMS
+19 : [ 2010-09-03T06:51:14.001 ; 2010-09-03T06:51:24.001 ] — OBS_REIMS
+20 : [ 2010-09-03T06:51:24.001 ; 2010-09-03T06:52:09.171 ] — Slew_REIMS_to_LYON
+21 : [ 2010-09-03T06:52:09.171 ; 2010-09-03T06:52:19.171 ] — OBS_LYON
+22 : [ 2010-09-03T06:52:19.171 ; 2010-09-03T06:52:42.671 ] — Slew_LYON_to_Nadir
+23 : [ 2010-09-03T06:52:42.671 ; 2010-09-04T07:29:48.400 ] — Nadir_Law
+24 : [ 2010-09-04T07:29:48.400 ; 2010-09-04T07:30:11.900 ] — Slew_Nadir_to_LILLE
+25 : [ 2010-09-04T07:30:11.900 ; 2010-09-04T07:30:21.900 ] — OBS_LILLE
+26 : [ 2010-09-04T07:30:21.900 ; 2010-09-04T07:31:04.712 ] — Slew_LILLE_to_RENNES
+27 : [ 2010-09-04T07:31:04.712 ; 2010-09-04T07:31:14.712 ] — OBS_RENNES
+28 : [ 2010-09-04T07:31:14.712 ; 2010-09-04T07:31:38.212 ] — Slew_RENNES_to_Nadir
+29 : [ 2010-09-04T07:31:38.212 ; 2010-09-04T07:31:43.195 ] — Nadir_Law
+30 : [ 2010-09-04T07:31:43.195 ; 2010-09-04T07:32:06.695 ] — Slew_Nadir_to_TOULOUSE
+31 : [ 2010-09-04T07:32:06.695 ; 2010-09-04T07:32:16.695 ] — OBS_TOULOUSE
+32 : [ 2010-09-04T07:32:16.695 ; 2010-09-04T07:32:40.195 ] — Slew_TOULOUSE_to_Nadir
+33 : [ 2010-09-04T07:32:40.195 ; 2010-09-05T06:31:46.325 ] — Nadir_Law
+34 : [ 2010-09-05T06:31:46.325 ; 2010-09-05T06:32:09.825 ] — Slew_Nadir_to_STRASBOURG
+35 : [ 2010-09-05T06:32:09.825 ; 2010-09-05T06:32:19.825 ] — OBS_STRASBOURG
+36 : [ 2010-09-05T06:32:19.825 ; 2010-09-05T06:32:43.325 ] — Slew_STRASBOURG_to_Nadir
+37 : [ 2010-09-05T06:32:43.325 ; 2010-09-05T06:33:18.492 ] — Nadir_Law
+38 : [ 2010-09-05T06:33:18.492 ; 2010-09-05T06:33:41.992 ] — Slew_Nadir_to_TOULON
+39 : [ 2010-09-05T06:33:41.992 ; 2010-09-05T06:33:51.992 ] — OBS_TOULON
+40 : [ 2010-09-05T06:33:51.992 ; 2010-09-05T06:34:15.492 ] — Slew_TOULON_to_Nadir
+41 : [ 2010-09-05T06:34:15.492 ; 2010-09-05T06:34:17.278 ] — Nadir_Law
+42 : [ 2010-09-05T06:34:17.278 ; 2010-09-05T06:34:40.778 ] — Slew_Nadir_to_AIX-EN-PROVENCE
+43 : [ 2010-09-05T06:34:40.778 ; 2010-09-05T06:34:50.778 ] — OBS_AIX-EN-PROVENCE
+44 : [ 2010-09-05T06:34:50.778 ; 2010-09-05T06:35:14.278 ] — Slew_AIX-EN-PROVENCE_to_Nadir
+45 : [ 2010-09-05T06:35:14.278 ; 2010-09-06T07:12:00.661 ] — Nadir_Law
+46 : [ 2010-09-06T07:12:00.661 ; 2010-09-06T07:12:24.161 ] — Slew_Nadir_to_SAINT-ETIENNE
+47 : [ 2010-09-06T07:12:24.161 ; 2010-09-06T07:12:34.161 ] — OBS_SAINT-ETIENNE
+48 : [ 2010-09-06T07:12:34.161 ; 2010-09-06T07:13:13.328 ] — Slew_SAINT-ETIENNE_to_Nadir
+49 : [ 2010-09-06T07:13:13.328 ; 2010-09-08T00:00:00.000 ] — Nadir_Law_2
+
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law_1
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_LE HAVRE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_LE HAVRE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_LE HAVRE_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_MARSEILLE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_MARSEILLE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_MARSEILLE_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_PARIS
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_PARIS
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_PARIS_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_BORDEAUX
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_BORDEAUX
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_BORDEAUX_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_REIMS
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_REIMS
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_REIMS_to_LYON
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_LYON
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_LYON_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_LILLE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_LILLE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_LILLE_to_RENNES
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_RENNES
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_RENNES_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_TOULOUSE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_TOULOUSE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_TOULOUSE_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_STRASBOURG
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_STRASBOURG
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_STRASBOURG_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_TOULON
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_TOULON
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_TOULON_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_AIX-EN-PROVENCE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_AIX-EN-PROVENCE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_AIX-EN-PROVENCE_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_Nadir_to_SAINT-ETIENNE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | OBS_SAINT-ETIENNE
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Slew_SAINT-ETIENNE_to_Nadir
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | Nadir_Law_2
+[19:06:58] INFO BEProgMissionLogger | Cinematic is ok
+[19:06:58] INFO BEProgMissionLogger | ==== Is the cinematic plan valid ? => true ==== 
+[19:06:58] INFO BEProgMissionLogger | Plan validity : true
+[19:06:58] INFO BEProgMissionLogger | Number of cities visited : 13
+[19:06:58] INFO BEProgMissionLogger | ==== Evaluation of the final score ====
+[19:06:58] INFO BEProgMissionLogger | Site : MARSEILLE GeodeticPoint: name=MARSEILLE, latitude=0.7556699702482289, longitude=0.09383570737129793, altitude=320.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.2529475618151831
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 14.49282773013449
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of MARSEILLE : 851400.0*0.9681789752924083 = 824307.5795639564
+[19:06:58] INFO BEProgMissionLogger | Site : LE HAVRE GeodeticPoint: name=LE HAVRE, latitude=0.8639379797371931, longitude=0.0023270998515615995, altitude=52.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.8577483226443812
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 49.14535877194866
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of LE HAVRE : 178800.0*0.6541422297152188 = 116960.63067308113
+[19:06:58] INFO BEProgMissionLogger | Site : LYON GeodeticPoint: name=LYON, latitude=0.7986434670908332, longitude=0.08449819587312826, altitude=237.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.6668995240511888
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 38.210528087416456
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of LYON : 474900.0*0.7857432474968289 = 373149.46823624405
+[19:06:58] INFO BEProgMissionLogger | Site : SAINT-ETIENNE GeodeticPoint: name=SAINT-ETIENNE, latitude=0.7929606750463398, longitude=0.07679448708775051, altitude=769.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.17448489979112614
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 9.997248346794626
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of SAINT-ETIENNE : 172700.0*0.9848160914011391 = 170077.73898497672
+[19:06:58] INFO BEProgMissionLogger | Site : BORDEAUX GeodeticPoint: name=BORDEAUX, latitude=0.7824886995343738, longitude=-0.009890204912398708, altitude=21.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.28608779169870685
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 16.39162303455373
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of BORDEAUX : 235900.0*0.9593552441968323 = 226311.90210603274
+[19:06:58] INFO BEProgMissionLogger | Site : REIMS GeodeticPoint: name=REIMS, latitude=0.8595746566072073, longitude=0.0703948883194629, altitude=105.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.7895964054697177
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 45.24054155211529
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of REIMS : 181500.0*0.7041319530155999 = 127799.94947233138
+[19:06:58] INFO BEProgMissionLogger | Site : TOULOUSE GeodeticPoint: name=TOULOUSE, latitude=0.7609635538695277, longitude=0.025016327767610324, altitude=189.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.24446923000161486
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 14.007055099905534
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of TOULOUSE : 439600.0*0.970265929934723 = 426528.9027993042
+[19:06:58] INFO BEProgMissionLogger | Site : STRASBOURG GeodeticPoint: name=STRASBOURG, latitude=0.8479385464841611, longitude=0.13526301702956053, altitude=141.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.7183837307238637
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 41.16035584134
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of STRASBOURG : 272100.0*0.7528704898825932 = 204856.0602970536
+[19:06:58] INFO BEProgMissionLogger | Site : AIX-EN-PROVENCE GeodeticPoint: name=AIX-EN-PROVENCE, latitude=0.7597994192584474, longitude=0.09482949784738351, altitude=287.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.9137954103898333
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 52.35662035376246
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of AIX-EN-PROVENCE : 142700.0*0.6107448454450949 = 87153.28944501503
+[19:06:58] INFO BEProgMissionLogger | Site : TOULON GeodeticPoint: name=TOULON, latitude=0.7525283775946391, longitude=0.10355614410735516, altitude=294.5
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.7556148992635794
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 43.29354466500595
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of TOULON : 166700.0*0.7278500220314119 = 121332.59867263636
+[19:06:58] INFO BEProgMissionLogger | Site : RENNES GeodeticPoint: name=RENNES, latitude=0.8392119002241895, longitude=-0.029379650897596147, altitude=47.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.31306257544938104
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 17.937164296745436
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of RENNES : 206700.0*0.9513948401153918 = 196653.31345185149
+[19:06:58] INFO BEProgMissionLogger | Site : PARIS GeodeticPoint: name=PARIS, latitude=0.8527678725244294, longitude=0.04091837164838106, altitude=0.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.4765304651050046
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 27.30318445992291
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of PARIS : 2211000.0*0.8885917398564426 = 1964676.3368225945
+[19:06:58] INFO BEProgMissionLogger | Site : LILLE GeodeticPoint: name=LILLE, latitude=0.8837177961500449, longitude=0.0535234885721345, altitude=31.0
+[19:06:58] INFO BEProgMissionLogger | Incidence angle rad : 0.09642463893468736
+[19:06:58] INFO BEProgMissionLogger | Incidence angle deg : 5.52472485203042
+[19:06:58] INFO BEProgMissionLogger |  => Contribution of LILLE : 225800.0*0.9953547453632435 = 224751.10150302039
+[19:06:58] INFO BEProgMissionLogger | Final score :5064558.872028098
+[19:06:58] INFO BEProgMissionLogger | Duration of the score computation : 0.033
+[19:06:58] INFO BEProgMissionLogger | Total duration : 2.572
+[19:06:58] INFO BEProgMissionLogger | 
+
+Writing VTS outputs, please wait...
+[19:06:58] INFO BEProgMissionLogger | VTS POI file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Target_Sites_POI.txt
+[19:06:59] INFO BEProgMissionLogger | VTS OEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Satellite_Trajectory_OEM.txt
+[19:07:37] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Nadir_Pointing_AEM.txt
+[19:08:15] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_AEM.txt
+[19:08:15] INFO BEProgMissionLogger | VTS MEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_Events_MEM.txt
+[19:08:15] INFO BEProgMissionLogger | VTS outputs written
+[19:08:15] INFO BEProgMissionLogger | 
+
+Simulation done
+[19:08:15] INFO BEProgMissionLogger | ##################################################
