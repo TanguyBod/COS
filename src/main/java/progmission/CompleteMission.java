@@ -773,6 +773,7 @@ public class CompleteMission extends SimpleMission {
             // Handle the slews between consecutive observations
             Entry<Site, AttitudeLawLeg> prevEntry = firstEntry;
             while (iterator.hasNext()) {
+
                 Entry<Site, AttitudeLawLeg> currentEntry = iterator.next();
                 Site currentSite = currentEntry.getKey();
                 Site previousSite = prevEntry.getKey();
@@ -780,17 +781,49 @@ public class CompleteMission extends SimpleMission {
                 AttitudeLawLeg previousObsLeg = prevEntry.getValue();
 
         	    final KeplerianPropagator propagator = this.createDefaultPropagator();
-    		    final AbsoluteDate obsStart = previousObsLeg.getEnd();
-    		    final AbsoluteDate obsEnd = currentObsLeg.getDate();
-                // Add slew between the current observation and the next
-                final Attitude startObsAttitude = previousObsLeg.getAttitude(propagator, obsStart, getEme2000());
-                final Attitude endObsAttitude = currentObsLeg.getAttitude(propagator, obsEnd, getEme2000());
-                
-                final ConstantSpinSlew currentSlew = new ConstantSpinSlew(startObsAttitude,endObsAttitude,"Slew_" + previousSite.getName() + "_to_" + currentSite.getName());
+    		    final AbsoluteDate dateEndPrevObs = previousObsLeg.getEnd();
+    		    final AbsoluteDate dateStartCurObs = currentObsLeg.getDate();
 
-                this.cinematicPlan.add(currentSlew);
-                this.cinematicPlan.add(currentObsLeg);
+				// One max slew duration between two observations is enough to add a nadir between them
+				// In worst case scenario, we need 1/2 maw slew duration from one observation to nadir
+				// and 1/2 max slew duration from nadir to the next observation so 1 max slew duration total
+				if (dateStartCurObs.durationFrom(dateEndPrevObs) > 1.5 * getSatellite().getMaxSlewDuration()) { 
 
+					// Getting all dates needed to compute our slews
+					final AbsoluteDate dateStartNadirLaw = dateEndPrevObs.shiftedBy(+0.75*getSatellite().getMaxSlewDuration());
+					final AbsoluteDate dateEndNadirLaw = dateStartCurObs.shiftedBy(-0.75*getSatellite().getMaxSlewDuration());
+
+					// Creating Attitudes for the slews 
+					final Attitude startSlewObsNadirAttitude = previousObsLeg.getAttitude(propagator, dateEndPrevObs, getEme2000());
+					final Attitude endSlewObsNadirAttitude = nadirLaw.getAttitude(propagator, dateStartNadirLaw, getEme2000());
+					final Attitude startSlewNadirObsAttitude = nadirLaw.getAttitude(propagator, dateEndNadirLaw, getEme2000());
+					final Attitude endSlewNadirObsAttitude = currentObsLeg.getAttitude(propagator, dateStartCurObs, getEme2000());
+					
+					// Compute slew from previous observation to nadir and nadir to next observation
+					final ConstantSpinSlew slewPrevObsToNadir = new ConstantSpinSlew(startSlewObsNadirAttitude, endSlewObsNadirAttitude, "Slew_" + previousSite.getName() + "_to_Nadir");
+					final ConstantSpinSlew slewNadirToCurObs = new ConstantSpinSlew(startSlewNadirObsAttitude, endSlewNadirObsAttitude, "Slew_Nadir_to_" + currentSite.getName());
+
+					// Compute AttitudeLawLeg for Nadir
+					final AttitudeLawLeg nadir = new AttitudeLawLeg(nadirLaw, dateStartNadirLaw, dateEndNadirLaw, "Nadir_Law");
+
+					// Add all the elements to the cinematic plan
+					this.cinematicPlan.add(slewPrevObsToNadir);
+					this.cinematicPlan.add(nadir);
+					this.cinematicPlan.add(slewNadirToCurObs);
+					this.cinematicPlan.add(currentObsLeg);
+				} else {
+					// Case where the duration between two observations is less than the max slew duration
+					// We directly go to 2nd observation without adding a nadir step
+					// dateEndPrevObs dateStartCurObs
+					final Attitude startObsAttitude = previousObsLeg.getAttitude(propagator, dateEndPrevObs, getEme2000());
+					final Attitude endObsAttitude = currentObsLeg.getAttitude(propagator, dateStartCurObs, getEme2000());
+					
+					final ConstantSpinSlew currentSlew = new ConstantSpinSlew(startObsAttitude,endObsAttitude,"Slew_" + previousSite.getName() + "_to_" + currentSite.getName());
+	
+					this.cinematicPlan.add(currentSlew);
+					this.cinematicPlan.add(currentObsLeg);
+
+				}
                 prevEntry = currentEntry;
             }
 
