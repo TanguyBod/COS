@@ -425,22 +425,8 @@ public class CompleteMission extends SimpleMission {
 		return dazzlingDetector; 
 	}
 
-	/**
-	 * [COMPLETE THIS METHOD TO ACHIEVE YOUR PROJECT]
-	 * 
+	/** 
 	 * Compute the access plan.
-	 * 
-	 * Reminder : the access plan corresponds to the object gathering all the
-	 * opportunities of access for all the sites of interest during the mission
-	 * horizon. One opportunity of access is defined by an access window (an
-	 * interval of time during which the satellite can observe the target and during
-	 * which all the observation conditions are achieved : visibility, incidence
-	 * angle, illumination of the scene,etc.). Here, we suggest you use the Patrius
-	 * class {@link Timeline} to encapsulate all the access windows of each site of
-	 * interest. One access window will then be described by the {@link Phenomenon}
-	 * object, itself defined by two {@link CodedEvent} objects giving the start and
-	 * end of the access window. Please find more tips and help in the submethods of
-	 * this method.
 	 * 
 	 * @return the sites access plan with one {@link Timeline} per {@link Site}
 	 * @throws PatriusException If a {@link PatriusException} occurs during the
@@ -498,15 +484,7 @@ public class CompleteMission extends SimpleMission {
 	}
 
 	/**
-	 * [COMPLETE THIS METHOD TO ACHIEVE YOUR PROJECT]
-	 * 
 	 * Compute the observation plan.
-	 * 
-	 * Reminder : the observation plan corresponds to the sequence of observations
-	 * programmed for the satellite during the mission horizon. Each observation is
-	 * defined by an observation window (start date; end date defining an
-	 * {@link AbsoluteDateInterval}), a target (target {@link Site}) and an
-	 * {@link AttitudeLawLeg} giving the attitude guidance to observe the target.
 	 * 
 	 * @return the sites observation plan with one {@link AttitudeLawLeg} per
 	 *         {@link Site}
@@ -514,60 +492,14 @@ public class CompleteMission extends SimpleMission {
 	 *                          computations
 	 */
 	public Map<Site, AttitudeLawLeg> computeObservationPlan() throws PatriusException {
-		/**
-		 * Here are the big constraints and informations you need to build an
-		 * observation plan.
-		 * 
-		 * Reminder : we can perform only one observation per site of interest during
-		 * the mission horizon.
-		 * 
-		 * Objective : Now we have our access plan, listing for each Site all the access
-		 * windows. There might be up to one access window per orbit pass above each
-		 * site, so we have to decide for each Site which access window will be used to
-		 * achieve the observation of the Site. Then, during one access window, we have
-		 * to decide when precisely we perform the observation, which lasts a constant
-		 * duration which is much smaller than the access window itself (see
-		 * ConstantsBE.INTEGRATION_TIME for the duration of one observation). Finally,
-		 * we must respect the cinematic constraint : using the
-		 * Satellite#computeSlewDuration() method, we need to ensure that the
-		 * theoretical duration of the slew between two consecutive observations is
-		 * always smaller than the actual duration between those consecutive
-		 * observations. Same goes for the slew between a Nadir pointing law and another
-		 * pointing law. Of course, we cannot point two targets at once, so we cannot
-		 * perform two observations during the same AbsoluteDateInterval !
-		 * 
-		 * Tip 1 : Here you can use the greedy algorithm presented in class, or any
-		 * method you want. You just have to ensure that all constraints are respected.
-		 * This is a non linear, complex optimization problem (scheduling problem), so
-		 * there is no universal answer. Even if you don't manage to build an optimal
-		 * plan, try to code a suboptimal algorithm anyway, we will value any idea you
-		 * have. For example, try with a plan where you have only one observation per
-		 * satellite pass over France. With that kind of plan, you make sure all
-		 * kinematic constraints are respected (no slew to fast for the satellite
-		 * agility) and you have a basic plan to use to build your kinematic plan and
-		 * validate with VTS visualization.
-		 * 
-		 * Tip 2 : We provide the observation plan format : a Map of AttitudeLawLeg. In
-		 * doing so, we give you the structure that you must obtain in order to go
-		 * further. If you check the Javadoc of the AttitudeLawLeg class, you see that
-		 * you have two inputs. First, you must provide a specific interval of time that
-		 * you have to chose inside one of the access windows of your access plan. Then,
-		 * we give you which law to use for observation legs : TargetGroundPointing.
-		 * 
-		 */
+		
 		logger.info("============= Computing Observation Plan =============");
-		/*
-		 * We provide a basic and incomplete code that you can use to compute the
-		 * observation plan.
-		 * 
-		 * Here the only thing we do is printing all the access opportunities using the
-		 * Timeline objects. We get a list of AbsoluteDateInterval from the Timelines,
-		 * which is the basis of the creation of AttitudeLawLeg objects since you need
-		 * an AbsoluteDateInterval or two AbsoluteDates to do it.
-		 */
-		for (final Entry<Site, Timeline> entry : this.accessPlan.entrySet()) {
+		List<Entry<Site, Timeline>> entryList = new ArrayList<>(this.accessPlan.entrySet());
+        entryList.sort(Comparator.comparing(entry -> entry.getKey().getScore(), Comparator.reverseOrder()));
+
+		for (final Entry<Site, Timeline> entry : entryList) {
 			// Scrolling through the entries of the accessPlan
-			// Getting the target Site
+			// Getting the target Site	
 			final Site target = entry.getKey();
 			logger.info("Current target site : " + target.getName());
 			// Getting its access Timeline
@@ -654,6 +586,8 @@ public class CompleteMission extends SimpleMission {
 				// Boolean to check if the observation is compatible with our existing plan
 				boolean obsCompatible = true;
 
+				///////////////// OPTIMISAZION PART (glouton algorithm)
+
 				// If the observation plan is empty, we can add the observation
 				if (this.observationPlan.isEmpty()) {
 					obsCompatible = true;
@@ -681,15 +615,6 @@ public class CompleteMission extends SimpleMission {
 					// When we add an observation, we break out of the loop for this target
 					break;
 				}
-
-
-				// // Then, we create our AttitudeLawLeg, that we name using the name of the target
-				// final String legName = "OBS_" + target.getName();
-				// final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
-
-				// // Finally, we add our leg to the plan
-				// this.observationPlan.put(target, obsLeg);
-
 			}
 
 		}
@@ -787,11 +712,12 @@ public class CompleteMission extends SimpleMission {
 				// One max slew duration between two observations is enough to add a nadir between them
 				// In worst case scenario, we need 1/2 maw slew duration from one observation to nadir
 				// and 1/2 max slew duration from nadir to the next observation so 1 max slew duration total
-				if (dateStartCurObs.durationFrom(dateEndPrevObs) > 1.2 * getSatellite().getMaxSlewDuration()) { 
+				float weightMaxSlewDuration = 1.2f;
+				if (dateStartCurObs.durationFrom(dateEndPrevObs) > weightMaxSlewDuration * getSatellite().getMaxSlewDuration()) { 
 
 					// Getting all dates needed to compute our slews
-					final AbsoluteDate dateStartNadirLaw = dateEndPrevObs.shiftedBy(+0.60*getSatellite().getMaxSlewDuration());
-					final AbsoluteDate dateEndNadirLaw = dateStartCurObs.shiftedBy(-0.60*getSatellite().getMaxSlewDuration());
+					final AbsoluteDate dateStartNadirLaw = dateEndPrevObs.shiftedBy(+0.5*weightMaxSlewDuration*getSatellite().getMaxSlewDuration());
+					final AbsoluteDate dateEndNadirLaw = dateStartCurObs.shiftedBy(-0.5*weightMaxSlewDuration*getSatellite().getMaxSlewDuration());
 
 					// Creating Attitudes for the slews 
 					final Attitude startSlewObsNadirAttitude = previousObsLeg.getAttitude(propagator, dateEndPrevObs, getEme2000());
@@ -836,54 +762,6 @@ public class CompleteMission extends SimpleMission {
             this.cinematicPlan.add(slew2);
             this.cinematicPlan.add(nadir2);
 		}
-
-		/* 
-		for (final Entry<Site, AttitudeLawLeg> entry : entryList) {
-			// Getting the associated Site
-			final Site target = entry.getKey();
-			// Getting the associated observation leg defined previously
-			final AttitudeLeg obsLeg = observationPlan.get(target);
-
-			// Getting our nadir law
-			final AttitudeLaw nadirLaw = this.getSatellite().getDefaultAttitudeLaw();
-
-			// Getting all the dates we need to compute our slews
-			final AbsoluteDate start = this.getStartDate();
-			final AbsoluteDate end = this.getEndDate();
-			final AbsoluteDate obsStart = obsLeg.getDate();
-			final AbsoluteDate obsEnd = obsLeg.getEnd();
-
-			final AbsoluteDate endNadirLaw1 = obsStart.shiftedBy(-getSatellite().getMaxSlewDuration());
-			final AbsoluteDate startNadirLaw2 = obsEnd.shiftedBy(+getSatellite().getMaxSlewDuration());
-
-			final KeplerianPropagator propagator = this.createDefaultPropagator();
-
-			final Attitude startObsAttitude = obsLeg.getAttitude(propagator, obsStart, getEme2000());
-			final Attitude endObsAttitude = obsLeg.getAttitude(propagator, obsEnd, getEme2000());
-			final Attitude endNadir1Attitude = nadirLaw.getAttitude(propagator, endNadirLaw1, getEme2000());
-			final Attitude startNadir2Attitude = nadirLaw.getAttitude(propagator, startNadirLaw2, getEme2000());
-			
-			final ConstantSpinSlew slew1 = new ConstantSpinSlew(endNadir1Attitude, startObsAttitude, "Slew_Nadir_to_" + entry.getValue().getNature());
-			final ConstantSpinSlew slew2 = new ConstantSpinSlew(endObsAttitude, startNadir2Attitude, "Slew_" + entry.getValue().getNature() + "_to_Nadir");
-			
-			final AttitudeLawLeg nadir1 = new AttitudeLawLeg(nadirLaw, start, endNadirLaw1, "Nadir_Law_1");
-			final AttitudeLawLeg nadir2 = new AttitudeLawLeg(nadirLaw, startNadirLaw2, end, "Nadir_Law_2");
-
-			System.out.println("nadir1: " + nadir1.getTimeInterval().getLowerData() + " to " + nadir1.getTimeInterval().getUpperData());
-			System.out.println("slew1: " + slew1.getTimeInterval().getLowerData() + " to " + slew1.getTimeInterval().getUpperData());
-			System.out.println("obsLeg: " + obsLeg.getTimeInterval().getLowerData() + " to " + obsLeg.getTimeInterval().getUpperData());
-			System.out.println("slew2: " + slew2.getTimeInterval().getLowerData() + " to " + slew2.getTimeInterval().getUpperData());
-			System.out.println("nadir2: " + nadir2.getTimeInterval().getLowerData() + " to " + nadir2.getTimeInterval().getUpperData());
-			System.out.println("------------------------------------------- ");
-
-
-			this.cinematicPlan.add(nadir1);
-			this.cinematicPlan.add(slew1);
-			this.cinematicPlan.add(obsLeg);
-			this.cinematicPlan.add(slew2);
-			this.cinematicPlan.add(nadir2);
-		}
-		*/
 
 
 		/**

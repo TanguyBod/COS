@@ -1,0 +1,836 @@
+[17:07:47] INFO BEProgMissionLogger | ##################################################
+[17:07:51] INFO BEProgMissionLogger | Complete simulation starting ...
+[17:07:51] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[17:07:51] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[17:07:51] INFO BEProgMissionLogger |  Site : PARIS
+[17:07:51] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : MARSEILLE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LYON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : TOULOUSE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.871 (UTC) ; 2010-09-01T07:13:03.558 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:26.596 (UTC) ; 2010-09-03T06:53:16.707 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:43.211 (UTC) ; 2010-09-04T07:33:32.179 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:36.155 (UTC) ; 2010-09-06T07:14:29.131 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/TOULOUSE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NICE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:16.969 (UTC) ; 2010-09-01T07:13:10.545 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:16.539 (UTC) ; 2010-09-03T06:53:59.141 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:26.222 (UTC) ; 2010-09-05T06:34:35.508 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NICE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NANTES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:58.237 (UTC) ; 2010-09-02T07:51:51.665 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:54.784 (UTC) ; 2010-09-04T07:32:43.533 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:59.140 (UTC) ; 2010-09-06T07:13:25.476 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NANTES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : STRASBOURG
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:59.523 (UTC) ; 2010-09-01T07:11:50.931 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:01.289 (UTC) ; 2010-09-03T06:52:35.820 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:30:12.642 (UTC) ; 2010-09-05T06:33:09.007 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/STRASBOURG_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : MONTPELLIER
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:34.814 (UTC) ; 2010-09-01T07:13:13.578 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:46.807 (UTC) ; 2010-09-03T06:53:47.287 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:30.113 (UTC) ; 2010-09-06T07:14:20.784 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/MONTPELLIER_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BORDEAUX
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:07.010 (UTC) ; 2010-09-01T07:12:20.030 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:35.619 (UTC) ; 2010-09-02T07:52:22.869 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:27.477 (UTC) ; 2010-09-04T07:33:21.078 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:27.125 (UTC) ; 2010-09-06T07:14:09.377 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BORDEAUX_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LILLE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:00.511 (UTC) ; 2010-09-01T07:11:04.942 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:56.981 (UTC) ; 2010-09-02T07:50:38.425 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:25.393 (UTC) ; 2010-09-03T06:51:22.422 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:46.391 (UTC) ; 2010-09-04T07:31:39.410 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:41.672 (UTC) ; 2010-09-06T07:12:32.452 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LILLE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : RENNES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:44.846 (UTC) ; 2010-09-02T07:51:38.606 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:42.403 (UTC) ; 2010-09-04T07:32:29.021 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:47.786 (UTC) ; 2010-09-06T07:13:09.497 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/RENNES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : REIMS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:11.535 (UTC) ; 2010-09-01T07:11:34.838 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:27.762 (UTC) ; 2010-09-03T06:52:02.239 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:07.506 (UTC) ; 2010-09-04T07:31:55.585 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:59.519 (UTC) ; 2010-09-06T07:12:53.184 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/REIMS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LE HAVRE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:54.721 (UTC) ; 2010-09-01T07:10:57.455 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:18.251 (UTC) ; 2010-09-02T07:51:10.393 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:12.781 (UTC) ; 2010-09-04T07:32:04.597 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:13.914 (UTC) ; 2010-09-06T07:12:50.105 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LE HAVRE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SAINT-ETIENNE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:04.475 (UTC) ; 2010-09-01T07:12:42.782 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:15.602 (UTC) ; 2010-09-03T06:53:17.044 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:59.637 (UTC) ; 2010-09-06T07:13:50.686 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SAINT-ETIENNE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : TOULON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.898 (UTC) ; 2010-09-01T07:13:22.390 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:34.235 (UTC) ; 2010-09-03T06:54:06.458 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:50.108 (UTC) ; 2010-09-05T06:34:35.877 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/TOULON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : GRENOBLE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:00.713 (UTC) ; 2010-09-01T07:12:48.591 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.364 (UTC) ; 2010-09-03T06:53:29.413 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:33:42.562 (UTC) ; 2010-09-05T06:33:54.281 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:02.948 (UTC) ; 2010-09-06T07:12:54.344 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/GRENOBLE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : DIJON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.632 (UTC) ; 2010-09-01T07:12:11.491 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:42.543 (UTC) ; 2010-09-03T06:52:46.701 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:28.003 (UTC) ; 2010-09-06T07:13:19.688 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/DIJON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ANGERS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:33.674 (UTC) ; 2010-09-01T07:11:27.197 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:52.288 (UTC) ; 2010-09-02T07:51:43.898 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:46.618 (UTC) ; 2010-09-04T07:32:38.625 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:48.178 (UTC) ; 2010-09-06T07:13:24.010 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ANGERS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LE MANS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:12.721 (UTC) ; 2010-09-01T07:11:28.305 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:42.583 (UTC) ; 2010-09-02T07:51:32.421 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:35.630 (UTC) ; 2010-09-04T07:32:28.771 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:35.548 (UTC) ; 2010-09-06T07:13:16.144 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LE MANS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AIX-EN-PROVENCE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:26.838 (UTC) ; 2010-09-01T07:13:15.883 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:32.269 (UTC) ; 2010-09-03T06:53:57.331 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:01.071 (UTC) ; 2010-09-05T06:34:22.485 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:30.598 (UTC) ; 2010-09-06T07:12:22.290 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AIX-EN-PROVENCE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BREST
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:50.901 (UTC) ; 2010-09-02T07:51:37.191 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:56.345 (UTC) ; 2010-09-04T07:32:17.517 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-07T07:48:51.125 (UTC) ; 2010-09-07T07:52:39.369 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BREST_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VILLEURBANNE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.344 (UTC) ; 2010-09-01T07:12:37.953 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:05.617 (UTC) ; 2010-09-03T06:53:14.303 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.438 (UTC) ; 2010-09-06T07:13:43.498 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VILLEURBANNE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NIMES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:28.337 (UTC) ; 2010-09-01T07:13:10.321 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:38.352 (UTC) ; 2010-09-03T06:53:46.267 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:25.793 (UTC) ; 2010-09-06T07:14:14.890 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NIMES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LIMOGES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:26.699 (UTC) ; 2010-09-01T07:12:20.600 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:18.688 (UTC) ; 2010-09-02T07:50:53.544 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:06.617 (UTC) ; 2010-09-03T06:52:23.545 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:06.794 (UTC) ; 2010-09-04T07:32:59.274 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:02.318 (UTC) ; 2010-09-06T07:13:52.661 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LIMOGES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CLERMONT-FERRAND
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:09.179 (UTC) ; 2010-09-01T07:12:32.796 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:27.861 (UTC) ; 2010-09-03T06:52:58.383 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:06.025 (UTC) ; 2010-09-04T07:32:50.766 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:56.757 (UTC) ; 2010-09-06T07:13:50.336 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CLERMONT-FERRAND_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : TOURS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:13.281 (UTC) ; 2010-09-01T07:11:46.238 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:52.418 (UTC) ; 2010-09-02T07:51:38.760 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:43.716 (UTC) ; 2010-09-04T07:32:37.466 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:41.935 (UTC) ; 2010-09-06T07:13:27.140 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/TOURS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AMIENS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:18.681 (UTC) ; 2010-09-01T07:11:13.311 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:09.521 (UTC) ; 2010-09-02T07:50:53.417 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:51.348 (UTC) ; 2010-09-03T06:51:22.719 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:59.768 (UTC) ; 2010-09-04T07:31:53.324 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:56.106 (UTC) ; 2010-09-06T07:12:45.056 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AMIENS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : METZ
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:58.892 (UTC) ; 2010-09-01T07:11:41.868 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:05.795 (UTC) ; 2010-09-03T06:52:20.228 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:56.734 (UTC) ; 2010-09-06T07:12:47.371 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/METZ_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BESANCON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:27.740 (UTC) ; 2010-09-01T07:12:13.672 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:33.801 (UTC) ; 2010-09-03T06:52:53.517 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:27.935 (UTC) ; 2010-09-06T07:13:15.607 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BESANCON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : PERPIGNAN
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.561 (UTC) ; 2010-09-01T07:13:26.968 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:12.210 (UTC) ; 2010-09-03T06:53:55.624 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:58.924 (UTC) ; 2010-09-04T07:30:33.929 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:46.572 (UTC) ; 2010-09-06T07:14:39.210 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/PERPIGNAN_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ORLEANS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:50.552 (UTC) ; 2010-09-01T07:11:47.250 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:43.339 (UTC) ; 2010-09-02T07:51:23.459 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:32.273 (UTC) ; 2010-09-04T07:32:25.214 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:27.936 (UTC) ; 2010-09-06T07:13:18.134 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ORLEANS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BOULOGNE-BILLANCOURT
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.976 (UTC) ; 2010-09-01T07:11:32.803 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:27.693 (UTC) ; 2010-09-02T07:51:08.503 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:04.900 (UTC) ; 2010-09-03T06:51:44.334 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.863 (UTC) ; 2010-09-04T07:32:09.901 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.465 (UTC) ; 2010-09-06T07:13:02.770 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BOULOGNE-BILLANCOURT_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : MULHOUSE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:13.999 (UTC) ; 2010-09-01T07:12:04.992 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:16.354 (UTC) ; 2010-09-03T06:52:49.314 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:30:28.950 (UTC) ; 2010-09-05T06:33:21.273 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:19.171 (UTC) ; 2010-09-06T07:10:51.945 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/MULHOUSE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CAEN
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:08.458 (UTC) ; 2010-09-01T07:10:55.543 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:24.244 (UTC) ; 2010-09-02T07:51:17.115 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:19.574 (UTC) ; 2010-09-04T07:32:10.295 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:21.766 (UTC) ; 2010-09-06T07:12:54.514 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CAEN_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ROUEN
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:40.213 (UTC) ; 2010-09-01T07:11:11.133 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:18.050 (UTC) ; 2010-09-02T07:51:06.959 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:10.461 (UTC) ; 2010-09-04T07:32:04.008 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:09.213 (UTC) ; 2010-09-06T07:12:52.622 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ROUEN_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NANCY
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:05.407 (UTC) ; 2010-09-01T07:11:49.542 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:11.894 (UTC) ; 2010-09-03T06:52:28.521 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:04.073 (UTC) ; 2010-09-06T07:12:53.839 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NANCY_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SAINT-DENIS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.427 (UTC) ; 2010-09-01T07:11:31.710 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.007 (UTC) ; 2010-09-02T07:51:06.395 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:01.140 (UTC) ; 2010-09-03T06:51:44.494 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.040 (UTC) ; 2010-09-04T07:32:07.967 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.479 (UTC) ; 2010-09-06T07:13:01.038 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SAINT-DENIS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ARGENTEUIL
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.374 (UTC) ; 2010-09-01T07:11:30.621 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:25.706 (UTC) ; 2010-09-02T07:51:06.888 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:03.567 (UTC) ; 2010-09-03T06:51:41.837 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.009 (UTC) ; 2010-09-04T07:32:08.103 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.707 (UTC) ; 2010-09-06T07:13:00.829 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ARGENTEUIL_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : MONTREUIL
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.577 (UTC) ; 2010-09-01T07:11:33.440 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:29.164 (UTC) ; 2010-09-02T07:51:06.774 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:00.248 (UTC) ; 2010-09-03T06:51:47.347 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.970 (UTC) ; 2010-09-04T07:32:08.684 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.185 (UTC) ; 2010-09-06T07:13:02.061 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/MONTREUIL_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ROUBAIX
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:58.607 (UTC) ; 2010-09-01T07:11:04.321 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:59.012 (UTC) ; 2010-09-02T07:50:36.858 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:22.654 (UTC) ; 2010-09-03T06:51:22.685 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:45.121 (UTC) ; 2010-09-04T07:31:38.023 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:40.249 (UTC) ; 2010-09-06T07:12:31.263 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ROUBAIX_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : DUNKERQUE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:02.105 (UTC) ; 2010-09-01T07:10:52.303 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:50.147 (UTC) ; 2010-09-02T07:50:36.848 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:36.699 (UTC) ; 2010-09-03T06:50:59.385 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:41.444 (UTC) ; 2010-09-04T07:31:35.255 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:38.501 (UTC) ; 2010-09-06T07:12:25.837 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/DUNKERQUE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : TOURCOING
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:58.535 (UTC) ; 2010-09-01T07:11:03.913 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:55.797 (UTC) ; 2010-09-02T07:50:36.740 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:22.759 (UTC) ; 2010-09-03T06:51:22.081 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:44.888 (UTC) ; 2010-09-04T07:31:37.831 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:40.064 (UTC) ; 2010-09-06T07:12:31.004 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/TOURCOING_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AVIGNON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:23.793 (UTC) ; 2010-09-01T07:13:08.821 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:31.918 (UTC) ; 2010-09-03T06:53:46.960 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:23.536 (UTC) ; 2010-09-06T07:13:53.205 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AVIGNON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NANTERRE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.606 (UTC) ; 2010-09-01T07:11:31.194 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.548 (UTC) ; 2010-09-02T07:51:07.915 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:05.384 (UTC) ; 2010-09-03T06:51:41.807 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.910 (UTC) ; 2010-09-04T07:32:09.056 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.680 (UTC) ; 2010-09-06T07:13:01.693 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NANTERRE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CRETEIL
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.384 (UTC) ; 2010-09-01T07:11:35.210 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:42.204 (UTC) ; 2010-09-02T07:51:07.678 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:00.504 (UTC) ; 2010-09-03T06:51:49.726 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.239 (UTC) ; 2010-09-04T07:32:09.826 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.310 (UTC) ; 2010-09-06T07:13:03.407 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CRETEIL_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : POITIERS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:29.133 (UTC) ; 2010-09-01T07:11:57.676 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:05.972 (UTC) ; 2010-09-02T07:51:52.293 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:57.303 (UTC) ; 2010-09-04T07:32:51.024 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:55.816 (UTC) ; 2010-09-06T07:13:40.458 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/POITIERS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VERSAILLES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:35.741 (UTC) ; 2010-09-01T07:11:32.547 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:28.262 (UTC) ; 2010-09-02T07:51:09.723 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:08.274 (UTC) ; 2010-09-03T06:51:42.393 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.663 (UTC) ; 2010-09-04T07:32:10.817 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:13.505 (UTC) ; 2010-09-06T07:13:03.374 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VERSAILLES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : COURBEVOIE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.066 (UTC) ; 2010-09-01T07:11:31.630 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.598 (UTC) ; 2010-09-02T07:51:07.608 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:04.100 (UTC) ; 2010-09-03T06:51:43.026 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.836 (UTC) ; 2010-09-04T07:32:08.913 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.485 (UTC) ; 2010-09-06T07:13:01.710 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/COURBEVOIE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VITRY-SUR-SEINE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.083 (UTC) ; 2010-09-01T07:11:34.761 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:30.323 (UTC) ; 2010-09-02T07:51:08.145 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:01.991 (UTC) ; 2010-09-03T06:51:48.438 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.370 (UTC) ; 2010-09-04T07:32:10.085 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.591 (UTC) ; 2010-09-06T07:13:03.466 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VITRY-SUR-SEINE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : PAU
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:23.570 (UTC) ; 2010-09-01T07:12:52.737 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:49:01.499 (UTC) ; 2010-09-02T07:52:36.943 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:51.116 (UTC) ; 2010-09-04T07:33:44.636 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:48.937 (UTC) ; 2010-09-06T07:14:35.482 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/PAU_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : COLOMBES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.820 (UTC) ; 2010-09-01T07:11:31.256 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.263 (UTC) ; 2010-09-02T07:51:07.358 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:03.925 (UTC) ; 2010-09-03T06:51:42.572 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.529 (UTC) ; 2010-09-04T07:32:08.626 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.199 (UTC) ; 2010-09-06T07:13:01.392 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/COLOMBES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AULNAY-SOUS-BOIS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:29.544 (UTC) ; 2010-09-01T07:11:32.463 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:36.515 (UTC) ; 2010-09-02T07:51:05.064 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:57.395 (UTC) ; 2010-09-03T06:51:47.221 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:14.466 (UTC) ; 2010-09-04T07:32:07.097 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:09.563 (UTC) ; 2010-09-06T07:13:00.620 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AULNAY-SOUS-BOIS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ASNIERES-SUR-SEINE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.512 (UTC) ; 2010-09-01T07:11:31.611 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.366 (UTC) ; 2010-09-02T07:51:07.194 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:03.123 (UTC) ; 2010-09-03T06:51:43.449 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.542 (UTC) ; 2010-09-04T07:32:08.578 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.128 (UTC) ; 2010-09-06T07:13:01.458 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ASNIERES-SUR-SEINE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : RUEIL-MALMAISON
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.843 (UTC) ; 2010-09-01T07:11:31.499 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.838 (UTC) ; 2010-09-02T07:51:08.141 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:05.587 (UTC) ; 2010-09-03T06:51:42.152 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.181 (UTC) ; 2010-09-04T07:32:09.308 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.937 (UTC) ; 2010-09-06T07:13:01.965 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/RUEIL-MALMAISON_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ANTIBES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:19.186 (UTC) ; 2010-09-01T07:13:12.771 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:19.065 (UTC) ; 2010-09-03T06:54:01.002 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:29.237 (UTC) ; 2010-09-05T06:34:36.825 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ANTIBES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LA ROCHELLE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:03.250 (UTC) ; 2010-09-01T07:11:42.106 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:14.323 (UTC) ; 2010-09-02T07:52:06.122 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:08.976 (UTC) ; 2010-09-04T07:33:00.591 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:11.350 (UTC) ; 2010-09-06T07:13:45.221 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LA ROCHELLE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SAINT-MAUR-DES-FOSSES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.804 (UTC) ; 2010-09-01T07:11:35.124 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:47.031 (UTC) ; 2010-09-02T07:51:07.218 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.572 (UTC) ; 2010-09-03T06:51:50.011 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.906 (UTC) ; 2010-09-04T07:32:09.442 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.915 (UTC) ; 2010-09-06T07:13:03.102 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SAINT-MAUR-DES-FOSSES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CHAMPIGNY-SUR-MARNE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.407 (UTC) ; 2010-09-01T07:11:34.918 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:48.754 (UTC) ; 2010-09-02T07:51:06.868 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.021 (UTC) ; 2010-09-03T06:51:49.964 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.612 (UTC) ; 2010-09-04T07:32:09.117 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.597 (UTC) ; 2010-09-06T07:13:02.806 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CHAMPIGNY-SUR-MARNE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CALAIS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:09.823 (UTC) ; 2010-09-01T07:10:49.626 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:52.254 (UTC) ; 2010-09-02T07:50:41.119 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:15.539 (UTC) ; 2010-09-03T06:50:43.200 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:44.528 (UTC) ; 2010-09-04T07:31:38.208 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:42.652 (UTC) ; 2010-09-06T07:12:27.376 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CALAIS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AUBERVILLIERS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.395 (UTC) ; 2010-09-01T07:11:32.188 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.302 (UTC) ; 2010-09-02T07:51:06.449 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:00.761 (UTC) ; 2010-09-03T06:51:45.343 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.257 (UTC) ; 2010-09-04T07:32:08.124 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.626 (UTC) ; 2010-09-06T07:13:01.291 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AUBERVILLIERS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CANNES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:20.043 (UTC) ; 2010-09-01T07:13:13.531 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:20.203 (UTC) ; 2010-09-03T06:54:01.419 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:30.804 (UTC) ; 2010-09-05T06:34:36.752 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CANNES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BEZIERS
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:43.010 (UTC) ; 2010-09-01T07:13:16.406 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:58.131 (UTC) ; 2010-09-03T06:53:46.610 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:35.138 (UTC) ; 2010-09-06T07:14:27.479 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BEZIERS_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : BOURGES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.896 (UTC) ; 2010-09-01T07:12:05.973 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:22.851 (UTC) ; 2010-09-03T06:52:23.267 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:44.915 (UTC) ; 2010-09-04T07:32:35.650 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:38.655 (UTC) ; 2010-09-06T07:13:31.195 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/BOURGES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : COLMAR
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:08.757 (UTC) ; 2010-09-01T07:11:59.502 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:11.247 (UTC) ; 2010-09-03T06:52:43.582 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:30:23.952 (UTC) ; 2010-09-05T06:33:15.327 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:13.466 (UTC) ; 2010-09-06T07:11:19.453 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/COLMAR_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SAINT-NAZAIRE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:58.868 (UTC) ; 2010-09-02T07:51:52.638 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:57.099 (UTC) ; 2010-09-04T07:32:42.313 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:03.659 (UTC) ; 2010-09-06T07:13:21.542 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SAINT-NAZAIRE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : DRANCY
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:30.465 (UTC) ; 2010-09-01T07:11:32.332 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.523 (UTC) ; 2010-09-02T07:51:05.760 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.056 (UTC) ; 2010-09-03T06:51:46.306 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:14.860 (UTC) ; 2010-09-04T07:32:07.614 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.093 (UTC) ; 2010-09-06T07:13:00.959 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/DRANCY_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : MERIGNAC
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:08.257 (UTC) ; 2010-09-01T07:12:19.016 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:35.658 (UTC) ; 2010-09-02T07:52:23.253 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:27.695 (UTC) ; 2010-09-04T07:33:21.233 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:27.538 (UTC) ; 2010-09-06T07:14:09.288 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/MERIGNAC_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : AJACCIO
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:42.401 (UTC) ; 2010-09-01T07:13:32.009 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:35.978 (UTC) ; 2010-09-03T06:54:28.344 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:38.528 (UTC) ; 2010-09-05T06:35:13.601 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/AJACCIO_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VALENCE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:08.632 (UTC) ; 2010-09-01T07:12:52.196 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:17.191 (UTC) ; 2010-09-03T06:53:29.591 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:07.153 (UTC) ; 2010-09-06T07:13:55.705 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VALENCE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : QUIMPER
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:55.032 (UTC) ; 2010-09-02T07:51:43.889 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:59.007 (UTC) ; 2010-09-04T07:32:26.125 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-07T07:48:57.586 (UTC) ; 2010-09-07T07:51:53.560 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/QUIMPER_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ISSY-LES-MOULINEAUX
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:34.034 (UTC) ; 2010-09-01T07:11:33.222 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:27.989 (UTC) ; 2010-09-02T07:51:08.611 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:04.703 (UTC) ; 2010-09-03T06:51:45.026 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.100 (UTC) ; 2010-09-04T07:32:10.087 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.651 (UTC) ; 2010-09-06T07:13:03.026 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ISSY-LES-MOULINEAUX_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NOISY-LE-GRAND
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:30.432 (UTC) ; 2010-09-01T07:11:34.626 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:55.702 (UTC) ; 2010-09-02T07:51:06.060 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:57.554 (UTC) ; 2010-09-03T06:51:50.190 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.985 (UTC) ; 2010-09-04T07:32:08.410 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.885 (UTC) ; 2010-09-06T07:13:02.207 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NOISY-LE-GRAND_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LEVALLOIS-PERRET
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.690 (UTC) ; 2010-09-01T07:11:31.804 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.556 (UTC) ; 2010-09-02T07:51:07.363 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:03.307 (UTC) ; 2010-09-03T06:51:43.640 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.725 (UTC) ; 2010-09-04T07:32:08.759 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.307 (UTC) ; 2010-09-06T07:13:01.646 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LEVALLOIS-PERRET_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VILLENEUVE-D'ASCQ
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:07:59.082 (UTC) ; 2010-09-01T07:11:04.478 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:46:57.012 (UTC) ; 2010-09-02T07:50:37.251 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:23.333 (UTC) ; 2010-09-03T06:51:22.625 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:45.439 (UTC) ; 2010-09-04T07:31:38.370 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:40.605 (UTC) ; 2010-09-06T07:12:31.562 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VILLENEUVE-D'ASCQ_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : TROYES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:24.801 (UTC) ; 2010-09-01T07:11:51.927 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:39.887 (UTC) ; 2010-09-03T06:52:20.880 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:23.333 (UTC) ; 2010-09-04T07:32:08.915 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:14.275 (UTC) ; 2010-09-06T07:13:08.014 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/TROYES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : ANTONY
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:34.606 (UTC) ; 2010-09-01T07:11:34.689 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:29.148 (UTC) ; 2010-09-02T07:51:09.292 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:04.700 (UTC) ; 2010-09-03T06:51:47.119 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:18.103 (UTC) ; 2010-09-04T07:32:10.976 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:13.524 (UTC) ; 2010-09-06T07:13:04.097 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/ANTONY_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NEUILLY-SUR-SEINE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.102 (UTC) ; 2010-09-01T07:11:31.995 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.840 (UTC) ; 2010-09-02T07:51:07.704 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:03.908 (UTC) ; 2010-09-03T06:51:43.636 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.028 (UTC) ; 2010-09-04T07:32:09.075 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.633 (UTC) ; 2010-09-06T07:13:01.932 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NEUILLY-SUR-SEINE_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LA SEYNE-SUR-MER
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:31.346 (UTC) ; 2010-09-01T07:13:22.743 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:34.839 (UTC) ; 2010-09-03T06:54:06.623 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:32:00.998 (UTC) ; 2010-09-05T06:34:35.734 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LA SEYNE-SUR-MER_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SARCELLES
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:30.251 (UTC) ; 2010-09-01T07:11:30.632 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:24.881 (UTC) ; 2010-09-02T07:51:05.300 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.794 (UTC) ; 2010-09-03T06:51:43.578 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:13.933 (UTC) ; 2010-09-04T07:32:06.843 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:09.371 (UTC) ; 2010-09-06T07:12:59.907 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SARCELLES_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CLICHY
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.511 (UTC) ; 2010-09-01T07:11:31.922 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:26.561 (UTC) ; 2010-09-02T07:51:07.250 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:02.907 (UTC) ; 2010-09-03T06:51:43.991 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.691 (UTC) ; 2010-09-04T07:32:08.696 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.235 (UTC) ; 2010-09-06T07:13:01.633 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CLICHY_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : LORIENT
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:55.635 (UTC) ; 2010-09-02T07:51:47.459 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:57.307 (UTC) ; 2010-09-04T07:32:32.643 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:12:57.207 (UTC) ; 2010-09-06T07:13:05.900 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/LORIENT_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : NIORT
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:46.280 (UTC) ; 2010-09-01T07:11:51.955 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:10.973 (UTC) ; 2010-09-02T07:52:00.613 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:04.042 (UTC) ; 2010-09-04T07:32:57.116 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:04.535 (UTC) ; 2010-09-06T07:13:44.078 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/NIORT_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : VENISSIEUX
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:57.587 (UTC) ; 2010-09-01T07:12:39.375 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.795 (UTC) ; 2010-09-03T06:53:15.821 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:54.812 (UTC) ; 2010-09-06T07:13:44.729 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/VENISSIEUX_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : PESSAC
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:10:08.368 (UTC) ; 2010-09-01T07:12:19.934 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:48:36.203 (UTC) ; 2010-09-02T07:52:23.641 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:28.161 (UTC) ; 2010-09-04T07:33:21.725 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:27.930 (UTC) ; 2010-09-06T07:14:09.879 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/PESSAC_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : SAINT-QUENTIN
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:09.454 (UTC) ; 2010-09-01T07:11:20.532 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:31.374 (UTC) ; 2010-09-03T06:51:41.444 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:27:58.603 (UTC) ; 2010-09-04T07:31:50.367 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:08:52.782 (UTC) ; 2010-09-06T07:12:44.999 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/SAINT-QUENTIN_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : CHAMBERY
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:53.583 (UTC) ; 2010-09-01T07:12:41.893 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:58.774 (UTC) ; 2010-09-03T06:53:23.185 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:33:03.750 (UTC) ; 2010-09-05T06:33:49.110 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:56.178 (UTC) ; 2010-09-06T07:12:43.491 (UTC) ]
+[17:07:52] INFO BEProgMissionLogger | 	|___________________________
+[17:07:52] INFO BEProgMissionLogger | accesses/CHAMBERY_562931739.serhas been loaded successfully!
+[17:07:52] INFO BEProgMissionLogger |  Site : IVRY-SUR-SEINE
+[17:07:52] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:07:53] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.788 (UTC) ; 2010-09-01T07:11:34.035 (UTC) ]
+[17:07:53] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:28.025 (UTC) ; 2010-09-02T07:51:07.810 (UTC) ]
+[17:07:53] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:01.961 (UTC) ; 2010-09-03T06:51:47.423 (UTC) ]
+[17:07:53] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.862 (UTC) ; 2010-09-04T07:32:09.646 (UTC) ]
+[17:07:53] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.149 (UTC) ; 2010-09-06T07:13:02.935 (UTC) ]
+[17:07:53] INFO BEProgMissionLogger | 	|___________________________
+[17:07:53] INFO BEProgMissionLogger | accesses/IVRY-SUR-SEINE_562931739.serhas been loaded successfully!
+[17:07:53] INFO BEProgMissionLogger |  Site : CERGY
+[17:07:53] INFO BEProgMissionLogger | CERGY has not been serialized, launching access computation...
+[17:08:03] INFO BEProgMissionLogger | 
+CERGY
+[17:08:03] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:08:03] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.243 (UTC) ; 2010-09-01T07:11:27.718 (UTC) ]
+[17:08:03] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:24.260 (UTC) ; 2010-09-02T07:51:06.949 (UTC) ]
+[17:08:03] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:07.390 (UTC) ; 2010-09-03T06:51:35.808 (UTC) ]
+[17:08:03] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:14.078 (UTC) ; 2010-09-04T07:32:07.480 (UTC) ]
+[17:08:03] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.258 (UTC) ; 2010-09-06T07:12:59.555 (UTC) ]
+[17:08:03] INFO BEProgMissionLogger | 	|___________________________
+[17:08:03] INFO BEProgMissionLogger | accesses/CERGY_562931739.ser has been serialized successfully !
+[17:08:03] INFO BEProgMissionLogger |  Site : MONTAUBAN
+[17:08:03] INFO BEProgMissionLogger | MONTAUBAN has not been serialized, launching access computation...
+[17:08:21] INFO BEProgMissionLogger | 
+MONTAUBAN
+[17:08:21] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:08:21] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:50.931 (UTC) ; 2010-09-01T07:12:55.366 (UTC) ]
+[17:08:21] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:23.721 (UTC) ; 2010-09-03T06:53:06.228 (UTC) ]
+[17:08:21] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:36.418 (UTC) ; 2010-09-04T07:33:26.458 (UTC) ]
+[17:08:21] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:30.002 (UTC) ; 2010-09-06T07:14:22.554 (UTC) ]
+[17:08:21] INFO BEProgMissionLogger | 	|___________________________
+[17:08:21] INFO BEProgMissionLogger | accesses/MONTAUBAN_562931739.ser has been serialized successfully !
+[17:08:21] INFO BEProgMissionLogger |  Site : HYERES
+[17:08:21] INFO BEProgMissionLogger | HYERES has not been serialized, launching access computation...
+[17:08:50] INFO BEProgMissionLogger | 
+HYERES
+[17:08:50] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:08:50] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.108 (UTC) ; 2010-09-01T07:13:22.182 (UTC) ]
+[17:08:50] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:32.819 (UTC) ; 2010-09-03T06:54:07.011 (UTC) ]
+[17:08:50] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:47.616 (UTC) ; 2010-09-05T06:34:37.642 (UTC) ]
+[17:08:50] INFO BEProgMissionLogger | 	|___________________________
+[17:08:50] INFO BEProgMissionLogger | accesses/HYERES_562931739.ser has been serialized successfully !
+[17:08:50] INFO BEProgMissionLogger |  Site : BEAUVAIS
+[17:08:50] INFO BEProgMissionLogger | BEAUVAIS has not been serialized, launching access computation...
+[17:09:33] INFO BEProgMissionLogger | 
+BEAUVAIS
+[17:09:33] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:09:33] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:27.556 (UTC) ; 2010-09-01T07:11:20.359 (UTC) ]
+[17:09:33] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:17.476 (UTC) ; 2010-09-02T07:51:01.265 (UTC) ]
+[17:09:33] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:02.528 (UTC) ; 2010-09-03T06:51:27.481 (UTC) ]
+[17:09:33] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:07.695 (UTC) ; 2010-09-04T07:32:01.239 (UTC) ]
+[17:09:33] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:04.151 (UTC) ; 2010-09-06T07:12:52.886 (UTC) ]
+[17:09:33] INFO BEProgMissionLogger | 	|___________________________
+[17:09:33] INFO BEProgMissionLogger | accesses/BEAUVAIS_562931739.ser has been serialized successfully !
+[17:09:33] INFO BEProgMissionLogger |  Site : CHOLET
+[17:09:33] INFO BEProgMissionLogger | CHOLET has not been serialized, launching access computation...
+[17:10:34] INFO BEProgMissionLogger | 
+CHOLET
+[17:10:34] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:10:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:46.119 (UTC) ; 2010-09-01T07:11:28.899 (UTC) ]
+[17:10:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:59.329 (UTC) ; 2010-09-02T07:51:51.358 (UTC) ]
+[17:10:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:54.112 (UTC) ; 2010-09-04T07:32:45.542 (UTC) ]
+[17:10:34] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:56.343 (UTC) ; 2010-09-06T07:13:30.165 (UTC) ]
+[17:10:34] INFO BEProgMissionLogger | 	|___________________________
+[17:10:34] INFO BEProgMissionLogger | accesses/CHOLET_562931739.ser has been serialized successfully !
+[17:10:34] INFO BEProgMissionLogger |  Site : BONDY
+[17:10:34] INFO BEProgMissionLogger | BONDY has not been serialized, launching access computation...
+[17:11:56] INFO BEProgMissionLogger | 
+BONDY
+[17:11:56] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:30.758 (UTC) ; 2010-09-01T07:11:33.056 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:32.043 (UTC) ; 2010-09-02T07:51:06.094 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.092 (UTC) ; 2010-09-03T06:51:47.312 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.364 (UTC) ; 2010-09-04T07:32:08.053 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.532 (UTC) ; 2010-09-06T07:13:01.489 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	|___________________________
+[17:11:56] INFO BEProgMissionLogger | accesses/BONDY_562931739.ser has been serialized successfully !
+[17:11:56] INFO BEProgMissionLogger |  Site : VILLEJUIF
+[17:11:56] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:33.209 (UTC) ; 2010-09-01T07:11:34.218 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:28.317 (UTC) ; 2010-09-02T07:51:08.143 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:02.563 (UTC) ; 2010-09-03T06:51:47.418 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.173 (UTC) ; 2010-09-04T07:32:09.954 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.484 (UTC) ; 2010-09-06T07:13:03.214 (UTC) ]
+[17:11:56] INFO BEProgMissionLogger | 	|___________________________
+[17:11:56] INFO BEProgMissionLogger | accesses/VILLEJUIF_562931739.serhas been loaded successfully!
+[17:11:56] INFO BEProgMissionLogger |  Site : VANNES
+[17:11:56] INFO BEProgMissionLogger | VANNES has not been serialized, launching access computation...
+[17:13:47] INFO BEProgMissionLogger | 
+VANNES
+[17:13:47] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:54.625 (UTC) ; 2010-09-02T07:51:47.824 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:54.567 (UTC) ; 2010-09-04T07:32:35.228 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:25.418 (UTC) ; 2010-09-06T07:13:11.601 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	|___________________________
+[17:13:47] INFO BEProgMissionLogger | accesses/VANNES_562931739.ser has been serialized successfully !
+[17:13:47] INFO BEProgMissionLogger |  Site : MAISONS-ALFORT
+[17:13:47] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.494 (UTC) ; 2010-09-01T07:11:34.684 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:34.658 (UTC) ; 2010-09-02T07:51:07.690 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:01.031 (UTC) ; 2010-09-03T06:51:48.752 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:17.031 (UTC) ; 2010-09-04T07:32:09.707 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:12.191 (UTC) ; 2010-09-06T07:13:03.167 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	|___________________________
+[17:13:47] INFO BEProgMissionLogger | accesses/MAISONS-ALFORT_562931739.serhas been loaded successfully!
+[17:13:47] INFO BEProgMissionLogger |  Site : CHELLES
+[17:13:47] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:29.627 (UTC) ; 2010-09-01T07:11:34.227 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:59.376 (UTC) ; 2010-09-02T07:51:04.660 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:56.445 (UTC) ; 2010-09-03T06:51:50.106 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:15.387 (UTC) ; 2010-09-04T07:32:07.772 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.240 (UTC) ; 2010-09-06T07:13:01.627 (UTC) ]
+[17:13:47] INFO BEProgMissionLogger | 	|___________________________
+[17:13:47] INFO BEProgMissionLogger | accesses/CHELLES_562931739.serhas been loaded successfully!
+[17:13:47] INFO BEProgMissionLogger |  Site : FONTENAY-SOUS-BOIS
+[17:13:47] INFO BEProgMissionLogger | FONTENAY-SOUS-BOIS has not been serialized, launching access computation...
+[17:15:42] INFO BEProgMissionLogger | 
+FONTENAY-SOUS-BOIS
+[17:15:42] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:15:42] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.288 (UTC) ; 2010-09-01T07:11:34.083 (UTC) ]
+[17:15:42] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:39.320 (UTC) ; 2010-09-02T07:51:06.651 (UTC) ]
+[17:15:42] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:49:59.342 (UTC) ; 2010-09-03T06:51:48.652 (UTC) ]
+[17:15:42] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:16.141 (UTC) ; 2010-09-04T07:32:08.742 (UTC) ]
+[17:15:42] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:11.229 (UTC) ; 2010-09-06T07:13:02.290 (UTC) ]
+[17:15:42] INFO BEProgMissionLogger | 	|___________________________
+[17:15:42] INFO BEProgMissionLogger | accesses/FONTENAY-SOUS-BOIS_562931739.ser has been serialized successfully !
+[17:15:42] INFO BEProgMissionLogger |  Site : EPINAY-SUR-SEINE
+[17:15:43] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:15:43] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:31.731 (UTC) ; 2010-09-01T07:11:31.050 (UTC) ]
+[17:15:43] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:25.708 (UTC) ; 2010-09-02T07:51:06.506 (UTC) ]
+[17:15:43] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:02.124 (UTC) ; 2010-09-03T06:51:43.108 (UTC) ]
+[17:15:43] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:14.876 (UTC) ; 2010-09-04T07:32:07.899 (UTC) ]
+[17:15:43] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:10.442 (UTC) ; 2010-09-06T07:13:00.800 (UTC) ]
+[17:15:43] INFO BEProgMissionLogger | 	|___________________________
+[17:15:43] INFO BEProgMissionLogger | accesses/EPINAY-SUR-SEINE_562931739.serhas been loaded successfully!
+[17:15:43] INFO BEProgMissionLogger |  Site : PANTIN
+[17:15:43] INFO BEProgMissionLogger | PANTIN has not been serialized, launching access computation...
