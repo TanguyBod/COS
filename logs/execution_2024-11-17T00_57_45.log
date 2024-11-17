@@ -1,0 +1,112 @@
+[00:57:46] INFO BEProgMissionLogger | ##################################################
+[00:57:49] INFO BEProgMissionLogger | Complete simulation starting ...
+[00:57:49] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[00:57:49] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[00:57:49] INFO BEProgMissionLogger |  Site : PARIS
+[00:57:49] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	|___________________________
+[00:57:49] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[00:57:49] INFO BEProgMissionLogger |  Site : MARSEILLE
+[00:57:49] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	|___________________________
+[00:57:49] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[00:57:49] INFO BEProgMissionLogger |  Site : LYON
+[00:57:49] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	|___________________________
+[00:57:49] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[00:57:49] INFO BEProgMissionLogger |  Site : TOULOUSE
+[00:57:49] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.871 (UTC) ; 2010-09-01T07:13:03.558 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:26.596 (UTC) ; 2010-09-03T06:53:16.707 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:43.211 (UTC) ; 2010-09-04T07:33:32.179 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:36.155 (UTC) ; 2010-09-06T07:14:29.131 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	|___________________________
+[00:57:49] INFO BEProgMissionLogger | accesses/TOULOUSE_562931739.serhas been loaded successfully!
+[00:57:49] INFO BEProgMissionLogger |  Site : NICE
+[00:57:49] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:16.969 (UTC) ; 2010-09-01T07:13:10.545 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:16.539 (UTC) ; 2010-09-03T06:53:59.141 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:26.222 (UTC) ; 2010-09-05T06:34:35.508 (UTC) ]
+[00:57:49] INFO BEProgMissionLogger | 	|___________________________
+[00:57:49] INFO BEProgMissionLogger | accesses/NICE_562931739.serhas been loaded successfully!
+[00:57:49] INFO BEProgMissionLogger | Access plan : {PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@5745ca0e, NICE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@3ad83a66, TOULOUSE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@3cce5371, LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@17bffc17, MARSEILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@6e535154}
+[00:57:49] INFO BEProgMissionLogger | ============= Computing Observation Plan =============
+[00:57:49] INFO BEProgMissionLogger | Current target site : PARIS
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.585 ; 2010-09-01T07:12:06.657 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-02T07:48:05.717 ; 2010-09-02T07:50:45.001 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-04T07:28:54.770 ; 2010-09-04T07:29:53.424 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-04T07:32:43.093 ; 2010-09-04T07:32:43.094 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-06T07:11:19.933 ; 2010-09-06T07:11:57.868 [
+[00:57:49] INFO BEProgMissionLogger | Current target site : MARSEILLE
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-01T07:10:04.719 ; 2010-09-01T07:13:53.825 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-03T06:51:10.176 ; 2010-09-03T06:54:35.292 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-05T06:34:42.140 ; 2010-09-05T06:35:00.356 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-06T07:11:08.619 ; 2010-09-06T07:12:54.268 [
+[00:57:49] INFO BEProgMissionLogger | Current target site : LYON
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-01T07:09:30.731 ; 2010-09-01T07:13:12.017 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-03T06:50:40.173 ; 2010-09-03T06:53:48.169 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-06T07:10:27.627 ; 2010-09-06T07:14:17.811 [
+[00:57:49] INFO BEProgMissionLogger | Current target site : TOULOUSE
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-01T07:10:29.871 ; 2010-09-01T07:13:37.558 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-03T06:52:00.596 ; 2010-09-03T06:53:50.707 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-04T07:30:17.211 ; 2010-09-04T07:34:06.179 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-06T07:11:10.155 ; 2010-09-06T07:15:03.131 [
+[00:57:49] INFO BEProgMissionLogger | Current target site : NICE
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-01T07:09:50.969 ; 2010-09-01T07:13:44.545 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-03T06:50:50.539 ; 2010-09-03T06:54:33.141 [
+[00:57:49] INFO BEProgMissionLogger | ] 2010-09-05T06:32:00.222 ; 2010-09-05T06:35:09.508 [
+[00:57:49] INFO BEProgMissionLogger | Observation plan : {PARIS=fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg@1c742ed4}
+[00:57:49] INFO BEProgMissionLogger | ============= Computing Cinematic Plan =============
+[00:57:49] INFO BEProgMissionLogger | Cinematic plan : Size : 5
+1 : [ 2010-09-01T00:00:00.000 ; 2010-09-06T07:10:55.766 ] — Nadir_Law_1
+2 : [ 2010-09-06T07:10:55.766 ; 2010-09-06T07:11:34.933 ] — Slew_Nadir_to_PARIS
+3 : [ 2010-09-06T07:11:34.933 ; 2010-09-06T07:11:44.933 ] — OBS_PARIS
+4 : [ 2010-09-06T07:11:44.933 ; 2010-09-06T07:12:24.099 ] — Slew_PARIS_to_Nadir
+5 : [ 2010-09-06T07:12:24.099 ; 2010-09-08T00:00:00.000 ] — Nadir_Law_2
+
+[00:57:49] INFO BEProgMissionLogger | Nadir_Law_1
+[00:57:49] INFO BEProgMissionLogger | Cinematic is ok
+[00:57:49] INFO BEProgMissionLogger | Slew_Nadir_to_PARIS
+[00:57:49] INFO BEProgMissionLogger | Cinematic is ok
+[00:57:49] INFO BEProgMissionLogger | OBS_PARIS
+[00:57:49] INFO BEProgMissionLogger | Cinematic is ok
+[00:57:49] INFO BEProgMissionLogger | Slew_PARIS_to_Nadir
+[00:57:49] INFO BEProgMissionLogger | Cinematic is ok
+[00:57:49] INFO BEProgMissionLogger | Nadir_Law_2
+[00:57:49] INFO BEProgMissionLogger | Cinematic is ok
+[00:57:49] INFO BEProgMissionLogger | ==== Is the cinematic plan valid ? => true ==== 
+[00:57:49] INFO BEProgMissionLogger | Plan validity : true
+[00:57:49] INFO BEProgMissionLogger | Number of cities visited : 1
+[00:57:49] INFO BEProgMissionLogger | ==== Evaluation of the final score ====
+[00:57:49] INFO BEProgMissionLogger | Site : PARIS GeodeticPoint: name=PARIS, latitude=0.8527678725244294, longitude=0.04091837164838106, altitude=0.0
+[00:57:49] INFO BEProgMissionLogger | Incidence angle rad : 0.21592768568901205
+[00:57:49] INFO BEProgMissionLogger | Incidence angle deg : 12.371745070007774
+[00:57:49] INFO BEProgMissionLogger |  => Contribution of PARIS : 2211000.0*0.9767780544859559 = 2159656.2784684487
+[00:57:49] INFO BEProgMissionLogger | Final score :2159656.2784684487
+[00:57:49] INFO BEProgMissionLogger | Duration of the score computation : 0.015
+[00:57:49] INFO BEProgMissionLogger | Total duration : 3.92
+[00:57:50] INFO BEProgMissionLogger | 
+
+Writing VTS outputs, please wait...
+[00:57:50] INFO BEProgMissionLogger | VTS POI file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Target_Sites_POI.txt
+[00:57:52] INFO BEProgMissionLogger | VTS OEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Satellite_Trajectory_OEM.txt
+[00:58:59] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Nadir_Pointing_AEM.txt
+[01:00:13] INFO BEProgMissionLogger | VTS AEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_AEM.txt
+[01:00:13] INFO BEProgMissionLogger | VTS MEM file created : ..\Vts-WindowsNT-32bits-3.5.1\Data\BESupaero\Data\BE_Supaero_Cinematic_Plan_Events_MEM.txt
+[01:00:13] INFO BEProgMissionLogger | VTS outputs written
+[01:00:13] INFO BEProgMissionLogger | 
+
+Simulation done
+[01:00:13] INFO BEProgMissionLogger | ##################################################

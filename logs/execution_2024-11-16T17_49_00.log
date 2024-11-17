@@ -1,0 +1,47 @@
+[17:49:00] INFO BEProgMissionLogger | ##################################################
+[17:49:01] INFO BEProgMissionLogger | Complete simulation starting ...
+[17:49:01] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[17:49:01] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[17:49:01] INFO BEProgMissionLogger |  Site : PARIS
+[17:49:01] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:32.585 (UTC) ; 2010-09-01T07:11:32.657 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-02T07:47:31.717 (UTC) ; 2010-09-02T07:50:11.001 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:28:20.770 (UTC) ; 2010-09-04T07:29:19.424 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:32:09.093 (UTC) ; 2010-09-04T07:32:09.094 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:45.933 (UTC) ; 2010-09-06T07:11:23.868 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	|___________________________
+[17:49:01] INFO BEProgMissionLogger | accesses/PARIS_562931739.serhas been loaded successfully!
+[17:49:01] INFO BEProgMissionLogger |  Site : MARSEILLE
+[17:49:01] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:30.719 (UTC) ; 2010-09-01T07:13:19.825 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:36.176 (UTC) ; 2010-09-03T06:54:01.292 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:34:08.140 (UTC) ; 2010-09-05T06:34:26.356 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:34.619 (UTC) ; 2010-09-06T07:12:20.268 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	|___________________________
+[17:49:01] INFO BEProgMissionLogger | accesses/MARSEILLE_562931739.serhas been loaded successfully!
+[17:49:01] INFO BEProgMissionLogger |  Site : LYON
+[17:49:01] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:08:56.731 (UTC) ; 2010-09-01T07:12:38.017 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:06.173 (UTC) ; 2010-09-03T06:53:14.169 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:09:53.627 (UTC) ; 2010-09-06T07:13:43.811 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	|___________________________
+[17:49:01] INFO BEProgMissionLogger | accesses/LYON_562931739.serhas been loaded successfully!
+[17:49:01] INFO BEProgMissionLogger |  Site : TOULOUSE
+[17:49:01] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:55.871 (UTC) ; 2010-09-01T07:13:03.558 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:51:26.596 (UTC) ; 2010-09-03T06:53:16.707 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-04T07:29:43.211 (UTC) ; 2010-09-04T07:33:32.179 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-06T07:10:36.155 (UTC) ; 2010-09-06T07:14:29.131 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	|___________________________
+[17:49:01] INFO BEProgMissionLogger | accesses/TOULOUSE_562931739.serhas been loaded successfully!
+[17:49:01] INFO BEProgMissionLogger |  Site : NICE
+[17:49:01] INFO BEProgMissionLogger | 	|____ Printing Timeline ____
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-01T07:09:16.969 (UTC) ; 2010-09-01T07:13:10.545 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-03T06:50:16.539 (UTC) ; 2010-09-03T06:53:59.141 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	| Visibility and Illumination and Dazzling [ 2010-09-05T06:31:26.222 (UTC) ; 2010-09-05T06:34:35.508 (UTC) ]
+[17:49:01] INFO BEProgMissionLogger | 	|___________________________
+[17:49:01] INFO BEProgMissionLogger | accesses/NICE_562931739.serhas been loaded successfully!
+[17:49:01] INFO BEProgMissionLogger | Access plan : {PARIS=fr.cnes.sirius.patrius.events.postprocessing.Timeline@3cce5371, LYON=fr.cnes.sirius.patrius.events.postprocessing.Timeline@17bffc17, MARSEILLE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@6e535154, TOULOUSE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@15a34df2, NICE=fr.cnes.sirius.patrius.events.postprocessing.Timeline@5b38c1ec}
+[17:49:01] INFO BEProgMissionLogger | ============= Computing Observation Plan =============
+[17:49:01] INFO BEProgMissionLogger | Current target site : PARIS
+[17:49:01] INFO BEProgMissionLogger | ] 2010-09-01T07:09:06.585 ; 2010-09-01T07:12:06.657 [

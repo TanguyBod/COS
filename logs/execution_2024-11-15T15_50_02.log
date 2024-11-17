@@ -1,0 +1,6 @@
+[15:50:02] INFO BEProgMissionLogger | ##################################################
+[15:50:03] INFO BEProgMissionLogger | Complete simulation starting ...
+[15:50:03] INFO BEProgMissionLogger | CompleteMission [name=BE Supaero mission, startDate=2010-09-01T00:00:00.000, endDate=2010-09-08T00:00:00.000, satellite=Pleiades 1A]
+[15:50:03] INFO BEProgMissionLogger | ============= Computing Access Plan =============
+[15:50:03] INFO BEProgMissionLogger |  Site : PARIS
+[15:50:04] INFO BEProgMissionLogger | PARIS has not been serialized, launching access computation...

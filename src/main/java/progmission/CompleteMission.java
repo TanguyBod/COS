@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Iterator;
 
+import org.apache.commons.lang3.ObjectUtils.Null;
 import org.slf4j.Logger;
 
 import fr.cnes.sirius.patrius.assembly.models.SensorModel;
@@ -38,6 +39,7 @@ import fr.cnes.sirius.patrius.propagation.events.ConstantRadiusProvider;
 import fr.cnes.sirius.patrius.propagation.events.EventDetector;
 import fr.cnes.sirius.patrius.propagation.events.ThreeBodiesAngleDetector;
 import fr.cnes.sirius.patrius.propagation.events.VariableRadiusProvider;
+import fr.cnes.sirius.patrius.math.geometry.euclidean.threed.Vector3D;
 import fr.cnes.sirius.patrius.time.AbsoluteDate;
 import fr.cnes.sirius.patrius.time.AbsoluteDateInterval;
 import fr.cnes.sirius.patrius.time.AbsoluteDateIntervalsList;
@@ -47,6 +49,60 @@ import reader.Site;
 import utils.ConstantsBE;
 import utils.LogUtils;
 import utils.ProjectUtils;
+// à trier
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.slf4j.Logger;
+
+import reader.Site;
+import reader.SitesReader;
+import utils.ConstantsBE;
+import utils.LogUtils;
+import utils.VTSTools;
+
+import com.opencsv.exceptions.CsvValidationException;
+
+import fr.cnes.sirius.addons.patriusdataset.PatriusDataset;
+import fr.cnes.sirius.patrius.attitudes.Attitude;
+import fr.cnes.sirius.patrius.attitudes.AttitudeLawLeg;
+import fr.cnes.sirius.patrius.attitudes.AttitudeLeg;
+import fr.cnes.sirius.patrius.attitudes.StrictAttitudeLegsSequence;
+import fr.cnes.sirius.patrius.attitudes.TargetGroundPointing;
+import fr.cnes.sirius.patrius.bodies.CelestialBody;
+import fr.cnes.sirius.patrius.bodies.CelestialBodyFactory;
+import fr.cnes.sirius.patrius.bodies.ExtendedOneAxisEllipsoid;
+import fr.cnes.sirius.patrius.events.Phenomenon;
+import fr.cnes.sirius.patrius.events.postprocessing.Timeline;
+import fr.cnes.sirius.patrius.frames.Frame;
+import fr.cnes.sirius.patrius.frames.FramesFactory;
+import fr.cnes.sirius.patrius.frames.TopocentricFrame;
+import fr.cnes.sirius.patrius.frames.transformations.Transform;
+import fr.cnes.sirius.patrius.math.geometry.euclidean.threed.Vector3D;
+import fr.cnes.sirius.patrius.math.util.FastMath;
+import fr.cnes.sirius.patrius.math.util.MathLib;
+import fr.cnes.sirius.patrius.orbits.CircularOrbit;
+import fr.cnes.sirius.patrius.orbits.Orbit;
+import fr.cnes.sirius.patrius.orbits.PositionAngle;
+import fr.cnes.sirius.patrius.orbits.pvcoordinates.PVCoordinates;
+import fr.cnes.sirius.patrius.propagation.BoundedPropagator;
+import fr.cnes.sirius.patrius.propagation.analytical.KeplerianPropagator;
+import fr.cnes.sirius.patrius.time.AbsoluteDate;
+import fr.cnes.sirius.patrius.time.AbsoluteDateInterval;
+import fr.cnes.sirius.patrius.time.TimeScale;
+import fr.cnes.sirius.patrius.time.TimeScalesFactory;
+import fr.cnes.sirius.patrius.utils.Constants;
+import fr.cnes.sirius.patrius.utils.exception.PatriusException;
+import fr.cnes.sirius.patrius.utils.exception.PropagationException;
 
 /**
  * This class implements the context of an Earth Observation mission.
@@ -278,27 +334,21 @@ public class CompleteMission extends SimpleMission {
 	}
 
 	/**
-	 * This method should compute a {@link Timeline} object which encapsulates all
-	 * the {@link Phenomenon} corresponding to a orbital phenomenon X relative to
-	 * the input target {@link Site}. For example, X can be the {@link Site}
-	 * visibility phenomenon.
-	 * 
-	 * You can copy-paste this method and adapt it for every X {@link Phenomenon}
-	 * and {@link Timeline} you need to implement. The global process described here
-	 * stays the same.
+	 * Compute a {@link Timeline} object which encapsulates all the visibility 
+	 * {@link Phenomenon} relative to the input target {@link Site}.
 	 * 
 	 * @param targetSite Input target {@link Site}
 	 * @return The {@link Timeline} containing all the {@link Phenomenon} relative
-	 *         to the X phenomenon to monitor.
+	 *         to the visibility phenomenon.
 	 * @throws PatriusException If a {@link PatriusException} occurs when creating
 	 *                          the {@link Timeline}.
 	 */
 
 	private Timeline createSiteVisibilityTimeline(Site targetSite) throws PatriusException {
-		// Creating the visibility detector
+		// Creating the visibility timeline
 		final EventDetector constraintVisibilityDetector = createConstraintVisibilityDetector(targetSite);
-
-		this.getSatellite().getPropagator().addEventDetector(constraintVisibilityDetector);
+		KeplerianPropagator propagator = this.createDefaultPropagator();
+		propagator.addEventDetector(constraintVisibilityDetector);
 
 		final GenericCodingEventDetector codingEventVisibilityDetector = new GenericCodingEventDetector(constraintVisibilityDetector,
 				"Event starting the Visibility phenomenon", "Event ending the Visibility phenomenon", true, "Visibility phenomenon");
@@ -306,11 +356,10 @@ public class CompleteMission extends SimpleMission {
 		final EventDetector eventVisibilityDetector = eventVisibilityLogger.monitorDetector(codingEventVisibilityDetector);
 		// Then you add your logger to the propagator, it will monitor the event coded
 		// by the codingEventDetector
-		// this.getSatellite().getPropagator().setEphemerisMode();
-		this.getSatellite().getPropagator().addEventDetector(eventVisibilityDetector);
+		propagator.addEventDetector(eventVisibilityDetector);
 
 		// Finally propagating the orbit
-		this.getSatellite().getPropagator().propagate(this.getStartDate(), this.getEndDate());
+		propagator.propagate(this.getStartDate(), this.getEndDate());
 
 		// Creating a Timeline to process the events : we are going to define one
 		// visibility Phenomenon by couple of events "start -> end" (linked to the
@@ -321,11 +370,22 @@ public class CompleteMission extends SimpleMission {
 		return phenomenonVisibilityTimeline;
 	}
 
-	private Timeline createSiteIlluminationTimeline(Site targetSite) throws PatriusException {
-		// Create the illumination detector
-		final EventDetector constraintIlluminationDetector = createConstraintIlluminationDetector(targetSite);
+	/**
+	 * Compute a {@link Timeline} object which encapsulates all the illumination 
+	 * {@link Phenomenon} relative to the input target {@link Site}.
+	 * 
+	 * @param targetSite Input target {@link Site}
+	 * @return The {@link Timeline} containing all the {@link Phenomenon} relative
+	 *         to the illumination phenomenon.
+	 * @throws PatriusException If a {@link PatriusException} occurs when creating
+	 *                          the {@link Timeline}.
+	 */
 
-		this.getSatellite().getPropagator().addEventDetector(constraintIlluminationDetector);
+	private Timeline createSiteIlluminationTimeline(Site targetSite) throws PatriusException {
+		// Create the illumination timeline
+		final EventDetector constraintIlluminationDetector = createConstraintIlluminationDetector(targetSite);
+		KeplerianPropagator propagator = this.createDefaultPropagator();
+		propagator.addEventDetector(constraintIlluminationDetector);
 
 		final GenericCodingEventDetector codingEventIlluminationDetector = new GenericCodingEventDetector(constraintIlluminationDetector,
 				"Event starting the Illumination phenomenon", "Event ending the Illumination phenomenon", true, "Illumination phenomenon");
@@ -333,10 +393,10 @@ public class CompleteMission extends SimpleMission {
 		final EventDetector eventIlluminationDetector = eventIlluminationLogger.monitorDetector(codingEventIlluminationDetector);
 		// Then you add your logger to the propagator, it will monitor the event coded
 		// by the codingEventDetector
-		this.getSatellite().getPropagator().addEventDetector(eventIlluminationDetector);
+		propagator.addEventDetector(eventIlluminationDetector);
 
 		// Finally propagating the orbit
-		this.getSatellite().getPropagator().propagate(this.getStartDate(), this.getEndDate());
+		propagator.propagate(this.getStartDate(), this.getEndDate());
 
 		// Creating a Timeline to process the events : we are going to define one
 		// visibility Phenomenon by couple of events "start -> end" (linked to the
@@ -347,11 +407,22 @@ public class CompleteMission extends SimpleMission {
 		return phenomenonIlluminationTimeline;
 	}
 
-	private Timeline createSiteDazzlingTimeline(Site targetSite) throws PatriusException {
-		// Creating the visibility detector
-		final EventDetector constraintDazzlingDetector = createConstraintDazzlingDetector(targetSite);
+	/**
+	 * Compute a {@link Timeline} object which encapsulates all the dazzling 
+	 * {@link Phenomenon} relative to the input target {@link Site}.
+	 * 
+	 * @param targetSite Input target {@link Site}
+	 * @return The {@link Timeline} containing all the {@link Phenomenon} relative
+	 *         to the dazzling phenomenon.
+	 * @throws PatriusException If a {@link PatriusException} occurs when creating
+	 *                          the {@link Timeline}.
+	 */
 
-		this.getSatellite().getPropagator().addEventDetector(constraintDazzlingDetector);
+	private Timeline createSiteDazzlingTimeline(Site targetSite) throws PatriusException {
+		// Creating the dazzling timeline
+		final EventDetector constraintDazzlingDetector = createConstraintDazzlingDetector(targetSite);
+		KeplerianPropagator propagator = this.createDefaultPropagator();
+		propagator.addEventDetector(constraintDazzlingDetector);
 
 		final GenericCodingEventDetector codingEventDazzlingDetector = new GenericCodingEventDetector(constraintDazzlingDetector,
 				"Event starting the Dazzling phenomenon", "Event ending the Dazzling phenomenon", false, "Dazzling phenomenon");
@@ -360,10 +431,10 @@ public class CompleteMission extends SimpleMission {
 		final EventDetector eventDazzlingDetector = eventDazzlingLogger.monitorDetector(codingEventDazzlingDetector);
 		// Then you add your logger to the propagator, it will monitor the event coded
 		// by the codingEventDetector
-		this.getSatellite().getPropagator().addEventDetector(eventDazzlingDetector);
+		propagator.addEventDetector(eventDazzlingDetector);
 
 		// Finally propagating the orbit
-		this.getSatellite().getPropagator().propagate(this.getStartDate(), this.getEndDate());
+		propagator.propagate(this.getStartDate(), this.getEndDate());
 
 		// Creating a Timeline to process the events : we are going to define one
 		// visibility Phenomenon by couple of events "start -> end" (linked to the
@@ -375,21 +446,11 @@ public class CompleteMission extends SimpleMission {
 	}
 
 	/**
-	 * Create an adapted instance of {@link EventDetector} matching the input need
-	 * for monitoring the events defined by the X constraint. (X can be a lot of
-	 * things).
+	 * Create the visibility detector
 	 * 
-	 * You can copy-paste this method to adapt it to the {@link EventDetector} X
-	 * that you want to create.
-	 * 
-	 * Note: this can have different inputs that we don't define here
-	 * 
-	 * @return An {@link EventDetector} answering the constraint (for example a
-	 *         {@link SensorVisibilityDetector} for a visibility constraint).
+	 * @return An {@link SensorVisibilityDetector} answering the visibility constraint
 	 */
-
 	private EventDetector createConstraintVisibilityDetector(Site targetSite) throws PatriusException {
-		// Creating the illumination detector
 		// Get sensor, add masking body and set main target
 		SensorModel sensor = new SensorModel(this.getSatellite().getAssembly(), this.getSatellite().SENSOR_NAME);
 		sensor.addMaskingCelestialBody(this.getEarth());
@@ -402,8 +463,12 @@ public class CompleteMission extends SimpleMission {
 		return visibilityDetector;
 	}
 
+	/**
+	 * Create the illumination detector
+	 * 
+	 * @return An {@link ThreeBodiesAngleDetector} answering the sun illumination constraint
+	 */
 	private EventDetector createConstraintIlluminationDetector(Site targetSite) throws PatriusException {
-		// Creating the illumination detector
 		TopocentricFrame target = new TopocentricFrame(this.getEarth(), targetSite.getPoint(), targetSite.getName());
 		EventDetector.Action action_continue = EventDetector.Action.CONTINUE;
 		ThreeBodiesAngleDetector sunIlluminationDetector = new ThreeBodiesAngleDetector(this.getEarth(), target, this.getSun(),
@@ -412,18 +477,19 @@ public class CompleteMission extends SimpleMission {
 		return sunIlluminationDetector; 
 	}
 
+	/**
+	 * Create the dazzling detector
+	 * 
+	 * @return An {@link ThreeBodiesAngleDetector} answering the dazzling constraint
+	 */
 	private EventDetector createConstraintDazzlingDetector(Site targetSite) throws PatriusException {
-		// Creating the dazzling detector
 		TopocentricFrame target = new TopocentricFrame(this.getEarth(), targetSite.getPoint(), targetSite.getName());
 		EventDetector.Action action_continue = EventDetector.Action.CONTINUE;
 		ThreeBodiesAngleDetector dazzlingDetector = new ThreeBodiesAngleDetector(this.createDefaultPropagator(), 
 		target, this.getSun(), MathLib.toRadians(ConstantsBE.MAX_SUN_PHASE_ANGLE), MAXCHECK_EVENTS, TRESHOLD_EVENTS, action_continue);
-
-		// ThreeBodiesAngleDetector dazzlingDetector = new ThreeBodiesAngleDetector( 
-		// target, this.createDefaultPropagator(), this.getSun(), MathLib.toRadians(ConstantsBE.MAX_SUN_PHASE_ANGLE), MAXCHECK_EVENTS, TRESHOLD_EVENTS, action_continue);
-		
 		return dazzlingDetector; 
 	}
+	
 
 	/** 
 	 * Compute the access plan.
@@ -483,6 +549,68 @@ public class CompleteMission extends SimpleMission {
 		return this.accessPlan;
 	}
 
+	public double getIncidence(AbsoluteDate date, Site site) throws PatriusException {
+		final KeplerianPropagator propagator = createDefaultPropagator();
+		final PVCoordinates satPv = propagator.getPVCoordinates(date, getEme2000());
+		final TopocentricFrame siteFrame = new TopocentricFrame(getEarth(), site.getPoint(), site.getName());
+		final PVCoordinates sitePv = siteFrame.getPVCoordinates(date, getEme2000());
+		final Vector3D siteSatVectorEme2000 = sitePv.getPosition().subtract(satPv.getPosition()).normalize();
+		final Vector3D siteNormalVectorEarthFrame = siteFrame.getZenith();
+		final Transform earth2Eme2000 = siteFrame.getParentShape().getBodyFrame().getTransformTo(getEme2000(), date);
+		final Vector3D siteNormalVectorEme2000 = earth2Eme2000.transformPosition(siteNormalVectorEarthFrame);
+		final double incidenceAngle = Vector3D.angle(siteNormalVectorEme2000, siteSatVectorEme2000);
+		return Math.abs(Math.toDegrees(incidenceAngle));
+	}
+
+	/**
+	 * Compute the best time for observation in a given window (regarding incidence)
+	 * 
+	 * @param accessWindow The access window to consider
+	 * @throws PatriusException If a {@link PatriusException} occurs
+	 * @return The best time for observation in the given window
+	 */
+
+	public AbsoluteDate computeBestObservationTime(Phenomenon accessWindow, Site site) throws PatriusException {
+		final AbsoluteDateInterval accessInterval = accessWindow.getTimespan();
+		AbsoluteDate date1 = accessInterval.getLowerData();
+		AbsoluteDate date2 = accessInterval.getUpperData();
+		double total_time = date2.durationFrom(date1);
+		int time_step = 5;
+		int n_iter = (int) total_time / time_step;
+		AbsoluteDate best_date = date1;
+		double best_incidence = getIncidence(date1, site);
+		for (int i = 1; i < n_iter - 1; i++) {
+			AbsoluteDate current_date = date1.shiftedBy(i * time_step);
+			double current_incidence = getIncidence(current_date, site);
+			if (current_incidence > best_incidence) {
+				best_incidence = current_incidence;
+				best_date = current_date;
+			}
+		}
+		return best_date;
+	}
+
+	public boolean isCompatible(AbsoluteDateInterval dateInterval) {
+		boolean compatible = true;
+		if (this.observationPlan.isEmpty()) {
+			compatible = true;
+		} else {
+			// If the observation plan is not empty, we need to check if the new observation
+			// is compatible with the existing plan
+			for (final Entry<Site, AttitudeLawLeg> obs : this.observationPlan.entrySet()) {
+				// Getting the observation interval of the existing observation
+				final AbsoluteDateInterval existingObsInterval = obs.getValue().getTimeInterval();
+				// Checking if the new observation is compatible with the existing one
+				if (dateInterval.getIntersectionWith(existingObsInterval) != null) {
+					compatible = false;
+					break;
+				}
+			}
+		}
+		return compatible;
+	}
+
+	
 	/**
 	 * Compute the observation plan.
 	 * 
@@ -506,7 +634,9 @@ public class CompleteMission extends SimpleMission {
 			final Timeline timeline = entry.getValue();
 			// Getting the access intervals
 			final AbsoluteDateIntervalsList accessIntervals = new AbsoluteDateIntervalsList();
-			for (final Phenomenon accessWindow : timeline.getPhenomenaList()) { // phenomemon = fenetre d'observation sur laquelle tous les critères sont remplis
+			double best_incidence = 0;
+			AttitudeLawLeg best_LawLeg = new AttitudeLawLeg(null, null);
+			for (final Phenomenon accessWindow : timeline.getPhenomenaList()) { 
 				// The Phenomena are sorted chronologically so the accessIntervals List is too // access interval -> juste le temps
 				final AbsoluteDateInterval accessInterval = accessWindow.getTimespan();
 				accessIntervals.add(accessInterval);
@@ -515,122 +645,38 @@ public class CompleteMission extends SimpleMission {
 				// Use this method to create your observation leg, see more help inside the
 				// method.
 				final AttitudeLaw observationLaw = createObservationLaw(target);
-
-				/**
-				 * Now that you have your observation law, you can compute at any AbsoluteDate
-				 * the Attitude of your Satellite pointing the target (using the getAttitude()
-				 * method). You can use those Attitudes to compute the duration of a slew from
-				 * one Attitude to another, for example the duration of the slew from the
-				 * Attitude at the end of an observation to the Atittude at the start of the
-				 * next one. That's how you will be able to choose a valid AbsoluteDateInterval
-				 * during which the observation will actually be performed, lasting
-				 * ConstantsBE.INTEGRATION_TIME seconds. When you have your observation
-				 * interval, you can build an AttitudeLawLeg using the observationLaw and this
-				 * interval and finally add this leg to the observation plan.
-				 */
-				/*
-				 * Here is an example of how to compute an Attitude. You need a
-				 * PVCoordinatePropagator (which we provide we the method
-				 * SimpleMission#createDefaultPropagator()), an AbsoluteDate and a Frame (which
-				 * we provide with this.getEME2000()).
-				 */
-				// Getting the begining/end of the accessIntervall as AbsoluteDate objects
-				final AbsoluteDate date1 = accessInterval.getLowerData();
-				final AbsoluteDate date2 = accessInterval.getUpperData();
-				final Attitude attitude1 = observationLaw.getAttitude(this.createDefaultPropagator(), date1,
-						this.getEme2000());
-				final Attitude attitude2 = observationLaw.getAttitude(this.createDefaultPropagator(), date2,
-						this.getEme2000());
-				/*
-				 * Now here is an example of code showing how to compute the duration of the
-				 * slew from attitude1 to attitude2 Here we compare two Attitudes coming from
-				 * the same AttitudeLaw which is a TargetGroundPointing so the
-				 */
-				final double slew12Duration = this.getSatellite().computeSlewDuration(attitude1, attitude2);
-				logger.info("Maximum possible duration of the slew : " + slew12Duration);
-				final double actualDuration = date2.durationFrom(date1);
-				logger.info("Actual duration of the slew : " + actualDuration);
-				/**
-				 * Of course, here the actual duration is less than the maximum possible
-				 * duration because the TargetGroundPointing mode is a very slow one and the
-				 * Satellite is very agile. But sometimes when trying to perform a slew from one
-				 * target to another, you will find that the Satellite doesn't have enough time,
-				 * then you need to either translate one of the observations or just don't
-				 * perform one of the observation.
-				 */
-
-				/**
-				 * Let's say after comparing several observation slews, you find a valid couple
-				 * of dates defining your observation window : {obsStart;obsEnd}, with
-				 * obsEnd.durationFrom(obsStart) == ConstantsBE.INTEGRATION_TIME.
-				 * 
-				 * Then you can use those dates to create your AttitudeLawLeg that you will
-				 * insert inside the observation plan, for this target. Reminder : only one
-				 * observation in the observation plan per target !
-				 * 
-				 * WARNING : what we do here doesn't work, we didn't check that there wasn't
-				 * another target observed while inserting this target observation, it's up to
-				 * you to build your observation plan using the methods and tips we provide. You
-				 * can also only insert one observation for each pass of the satellite and it's
-				 * fine.
-				 */
-				// Here we use the middle of the accessInterval to define our dates of
-				// observation
-				final AbsoluteDate middleDate = accessInterval.getMiddleDate(); // on observe la ville au milieu du créneau d'observation, on estime que c'est à ce moment où on la voit le mieux
-				final AbsoluteDate obsStart = middleDate.shiftedBy(-ConstantsBE.INTEGRATION_TIME / 2);
-				final AbsoluteDate obsEnd = middleDate.shiftedBy(ConstantsBE.INTEGRATION_TIME / 2);
+				
+				final AbsoluteDate bestDate = computeBestObservationTime(accessWindow, target);				
+				final AbsoluteDate obsStart = bestDate.shiftedBy(-ConstantsBE.INTEGRATION_TIME / 2);
+				final AbsoluteDate obsEnd = bestDate.shiftedBy(ConstantsBE.INTEGRATION_TIME / 2);
 				final AbsoluteDateInterval obsInterval = new AbsoluteDateInterval(obsStart, obsEnd);
 				final AbsoluteDateInterval obsIntervalSlew = new AbsoluteDateInterval(obsStart.shiftedBy(-this.getSatellite().getMaxSlewDuration()),
-						obsEnd.shiftedBy(this.getSatellite().getMaxSlewDuration())); // intervalle max qu'il faut dans le pire des cas (dépointage max)
+						obsEnd.shiftedBy(this.getSatellite().getMaxSlewDuration())); // maximum interval needed in the worst case (maximum slew)
 
 				// Boolean to check if the observation is compatible with our existing plan
-				boolean obsCompatible = true;
-
-				///////////////// OPTIMISAZION PART (glouton algorithm)
-
-				// If the observation plan is empty, we can add the observation
-				if (this.observationPlan.isEmpty()) {
-					obsCompatible = true;
-				} else {
-					// If the observation plan is not empty, we need to check if the new observation
-					// is compatible with the existing plan
-					for (final Entry<Site, AttitudeLawLeg> obs : this.observationPlan.entrySet()) {
-						// Getting the observation interval of the existing observation
-						final AbsoluteDateInterval existingObsInterval = obs.getValue().getTimeInterval();
-						// Checking if the new observation is compatible with the existing one
-						if (obsIntervalSlew.getIntersectionWith(existingObsInterval) != null) {
-							obsCompatible = false;
-							break;
-						}
-					}
-				}
+				boolean obsCompatible = isCompatible(obsIntervalSlew);
 				
 				// If the observation is compatible with the existing plan, we can add it
 				if (obsCompatible) {
-					// Creating the AttitudeLawLeg for the observation
-					final String legName = "OBS_" + target.getName();
-					final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
-					// Adding the observation to the plan
-					this.observationPlan.put(target, obsLeg);
-					// When we add an observation, we break out of the loop for this target
-					break;
+					double incidence = getIncidence(bestDate, target);
+					if (incidence > best_incidence) {
+						best_incidence = incidence;
+						final String legName = "OBS_" + target.getName();
+						final AttitudeLawLeg obsLeg = new AttitudeLawLeg(observationLaw, obsInterval, legName);
+						best_LawLeg = obsLeg;
+					}
 				}
 			}
-
+			if (best_incidence > 0) {
+				this.observationPlan.put(target, best_LawLeg);
+			}
 		}
 
 		return this.observationPlan;
 	}
 
 	/**
-	 * [COMPLETE THIS METHOD TO ACHIEVE YOUR PROJECT]
-	 * 
 	 * Computes the cinematic plan.
-	 * 
-	 * Here you need to compute the cinematic plan, which is the cinematic chain of
-	 * attitude law legs (observation, default law and slews) needed to perform the
-	 * mission. Usually, we start and end the mission in default law and during the
-	 * horizon, we alternate between default law, observation legs and slew legs.
 	 * 
 	 * @return a {@link StrictAttitudeLegsSequence} that gives all the cinematic
 	 *         plan of the {@link Satellite}. It is a chronological sequence of all
@@ -643,32 +689,6 @@ public class CompleteMission extends SimpleMission {
 	 */
 	public StrictAttitudeLegsSequence<AttitudeLeg> computeCinematicPlan() throws PatriusException {
 
-		/**
-		 * Now we want to assemble a continuous attitude law which is valid during all
-		 * the mission horizon. For that, we will use to object
-		 * StrictAttitudeLegsSequence<AttitudeLeg> which is a chronological sequence of
-		 * AttitudeLeg. In our case, each AttitudeLeg will be an AttitudeLawLeg, either
-		 * a leg of site observation, a slew, or the nadir pointing attitude law (see
-		 * the Satellite constructor and the BodyCenterGroundPointing class, it's the
-		 * Satellite default attitude law). For more help about the Attitude handling,
-		 * use the module 11 of the patrius formation.
-		 * 
-		 * Tip 1 : Please give names to the different AttitudeLawLeg you build so that
-		 * you can visualize them with VTS later on. For example "OBS_Paris" when
-		 * observing Paris or "SlEW_Paris_Lyon" when adding a slew from Paris
-		 * observation AttitudeLawLeg to Lyon observation AttitudeLawLeg.
-		 * 
-		 * Tip 2 : the sequence you want to obtain should look like this :
-		 * [nadir-slew-obs1-slew-obs2-slew-obs3-slew-nadir] for the simple version where
-		 * you don't try to fit nadir laws between observations or
-		 * [nadir-slew-obs1-slew-nadir-selw-obs2-slew-obs3-slew-nadir] for the more
-		 * complexe version with nadir laws if the slew during two observation is long
-		 * enough.
-		 * 
-		 * Tip 3 : You can use the class ConstantSpinSlew(initialAttitude,
-		 * finalAttitude, slewName) for the slews. This an AtittudeLeg so you will be
-		 * able to add it to the StrictAttitudeLegsSequence as every other leg.
-		 */
 		logger.info("============= Computing Cinematic Plan =============");
 
 		// We first need to sort the observation plan by date
